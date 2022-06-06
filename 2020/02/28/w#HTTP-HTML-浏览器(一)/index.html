@@ -1,0 +1,287 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="referrer" content="no-referrer"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>HTTP/HTML/浏览器(一) | Scott Stark</title><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><script src="/js/third-party/jquery.min.js">           </script><script src="/js/third-party/velocity.min.js">           </script><script src="/js/third-party/velocity.ui.min.js">           </script><link rel="icon" href="/img/scott.ico"><meta name="keywords" content="前端博客,Scott_Stark,blog,前端,软件开发,个人博客,个人网站,前端面试——HTTP/HTML/浏览器(一)"><meta name="generator" content="Hexo 4.2.0"></head><body><nav id="nav-bar"><nav class="clear-fix" id="nav-container"><div class="pull-left" id="page-home"><a href="/">Scott Stark</a></div><i class="fa fa-bars pull-right" id="toggle-nav" aria-hidden="true"></i><ul class="pull-right" id="navs"><li><a class="nav" href="/">Home</a></li><li><a class="nav" href="/about">About</a></li><li><a class="nav" href="/tags">Tags</a></li></ul></nav></nav><header id="header-info"><div id="header-container"><div id="site-info"><div id="terminal-pl"><div id="top-bar"><ul id="control"><li class="btn"></li><li class="btn"></li><li class="btn"></li></ul><div id="file-path"><i class="fa fa-folder folder-ic" aria-hidden="true"></i> Scott Stark @  HTTP/HTML/浏览器(一)</div></div><div id="code-pl">Last updated: 2020-02-28<br>Scott Stark:~ Desktop <span class="code-pl-input">$ Please don't reprint without permission</span><br><br>> Post.all <br></div></div></div></div></header><div id="content-outer"><div id="content-inner"><article id="post"><a class="article-title">HTTP/HTML/浏览器(一)</a><time class="article-date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-02-28</time><h2 id="1-http-和-https"><a href="#1-http-和-https" class="headerlink" title="1. http 和 https"></a>1. http 和 https</h2><p>http: 超文本传输协议，明文传输。<br>https: 安全版http。</p>
+<blockquote>
+<p>【个人理解】http是客户端与WWW服务器端传输超文本的通道，https是http通道的安全版。做一个不太恰当的比喻：http是普通民众去ATM取钱，而https则是本人提前预约取钱。<br>【解释】http：普通民众去ATM机无需要认证是否是本人即可取钱，取钱金额甚至密码都有可能被暴露出来，这就相当于其明文传输，但是这样的取钱方式简单有效，不会耽误太长时间。<br>https：预约取钱首先时需要核实身份的，确定预约存在方能进行下一步取钱，取钱过程不透明，安全有保障，但是花费时间久，消耗资源多。</p>
+</blockquote>
+<h3 id="http状态码"><a href="#http状态码" class="headerlink" title="http状态码"></a>http状态码</h3><h4 id="常见HTTP状态码"><a href="#常见HTTP状态码" class="headerlink" title="常见HTTP状态码"></a>常见HTTP状态码</h4><ul>
+<li>200 - 请求成功</li>
+<li>301 - 资源（网页等）被永久转移到其它URL</li>
+<li>404 - 请求的资源（网页等）不存在</li>
+<li>500 - 内部服务器错误<h4 id="HTTP状态码分类"><a href="#HTTP状态码分类" class="headerlink" title="HTTP状态码分类"></a>HTTP状态码分类</h4>HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。HTTP状态码共分为5种类型：<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>分类描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1**</td>
+<td>信息，服务器收到请求，需要请求者继续执行操作</td>
+</tr>
+<tr>
+<td>2**</td>
+<td>成功，操作被成功接收并处理</td>
+</tr>
+<tr>
+<td>3**</td>
+<td>重定向，需要进一步的操作以完成请求</td>
+</tr>
+<tr>
+<td>4**</td>
+<td>客户端错误，请求包含语法错误或无法完成请求</td>
+</tr>
+<tr>
+<td>5**</td>
+<td>服务器错误，服务器在处理请求的过程中发生了错误</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p>HTTP状态码表</p>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>状态码英文名称</th>
+<th>中文描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>100</td>
+<td>Continue</td>
+<td>继续。<a href="http://www.dreamdu.com/webbuild/client_vs_server/" target="_blank" rel="noopener">客户端</a>应继续其请求</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Switching Protocols</td>
+<td>切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议</td>
+</tr>
+<tr>
+<td>200</td>
+<td>OK</td>
+<td>请求成功。一般用于GET与POST请求</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Created</td>
+<td>已创建。成功请求并创建了新的资源</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Accepted</td>
+<td>已接受。已经接受请求，但未处理完成</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Non-Authoritative Information</td>
+<td>非授权信息。请求成功。但返回的meta信息不在原始的服务器，而是一个副本</td>
+</tr>
+<tr>
+<td>204</td>
+<td>No Content</td>
+<td>无内容。服务器成功处理，但未返回内容。在未更新网页的情况下，可确保浏览器继续显示当前文档</td>
+</tr>
+<tr>
+<td>205</td>
+<td>Reset Content</td>
+<td>重置内容。服务器处理成功，用户终端（例如：浏览器）应重置文档视图。可通过此返回码清除浏览器的表单域</td>
+</tr>
+<tr>
+<td>206</td>
+<td>Partial Content</td>
+<td>部分内容。服务器成功处理了部分GET请求</td>
+</tr>
+<tr>
+<td>300</td>
+<td>Multiple Choices</td>
+<td>多种选择。请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用于用户终端（例如：浏览器）选择</td>
+</tr>
+<tr>
+<td>301</td>
+<td>Moved Permanently</td>
+<td>永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI。今后任何新的请求都应使用新的URI代替</td>
+</tr>
+<tr>
+<td>302</td>
+<td>Found</td>
+<td>临时移动。与301类似。但资源只是临时被移动。客户端应继续使用原有URI</td>
+</tr>
+<tr>
+<td>303</td>
+<td>See Other</td>
+<td>查看其它地址。与301类似。使用GET和POST请求查看</td>
+</tr>
+<tr>
+<td>304</td>
+<td>Not Modified</td>
+<td>未修改。所请求的资源未修改，服务器返回此状态码时，不会返回任何资源。客户端通常会缓存访问过的资源，通过提供一个头信息指出客户端希望只返回在指定日期之后修改的资源</td>
+</tr>
+<tr>
+<td>305</td>
+<td>Use Proxy</td>
+<td>使用代理。所请求的资源必须通过代理访问</td>
+</tr>
+<tr>
+<td>306</td>
+<td>Unused</td>
+<td>已经被废弃的HTTP状态码</td>
+</tr>
+<tr>
+<td>307</td>
+<td>Temporary Redirect</td>
+<td>临时重定向。与302类似。使用GET请求重定向</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+<td>客户端请求的语法错误，服务器无法理解</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized</td>
+<td>请求要求用户的身份认证</td>
+</tr>
+<tr>
+<td>402</td>
+<td>Payment Required</td>
+<td>保留，将来使用</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden</td>
+<td>服务器理解请求客户端的请求，但是拒绝执行此请求</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+<td>服务器无法根据客户端的请求找到资源（网页）。通过此代码，网站设计人员可设置”您所请求的资源无法找到”的个性页面</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed</td>
+<td>客户端请求中的方法被禁止</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable</td>
+<td>服务器无法根据客户端请求的内容特性完成请求</td>
+</tr>
+<tr>
+<td>407</td>
+<td>Proxy Authentication Required</td>
+<td>请求要求代理的身份认证，与401类似，但请求者应当使用代理进行授权</td>
+</tr>
+<tr>
+<td>408</td>
+<td>Request Time-out</td>
+<td>服务器等待客户端发送的请求时间过长，超时</td>
+</tr>
+<tr>
+<td>409</td>
+<td>Conflict</td>
+<td>服务器完成客户端的 PUT 请求时可能返回此代码，服务器处理请求时发生了冲突</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone</td>
+<td>客户端请求的资源已经不存在。410不同于404，如果资源以前有现在被永久删除了可使用410代码，网站设计人员可通过301代码指定资源的新位置</td>
+</tr>
+<tr>
+<td>411</td>
+<td>Length Required</td>
+<td>服务器无法处理客户端发送的不带Content-Length的请求信息</td>
+</tr>
+<tr>
+<td>412</td>
+<td>Precondition Failed</td>
+<td>客户端请求信息的先决条件错误</td>
+</tr>
+<tr>
+<td>413</td>
+<td>Request Entity Too Large</td>
+<td>由于请求的实体过大，服务器无法处理，因此拒绝请求。为防止客户端的连续请求，服务器可能会关闭连接。如果只是服务器暂时无法处理，则会包含一个Retry-After的响应信息</td>
+</tr>
+<tr>
+<td>414</td>
+<td>Request-URI Too Large</td>
+<td>请求的URI过长（URI通常为网址），服务器无法处理</td>
+</tr>
+<tr>
+<td>415</td>
+<td>Unsupported Media Type</td>
+<td>服务器无法处理请求附带的媒体格式</td>
+</tr>
+<tr>
+<td>416</td>
+<td>Requested range not satisfiable</td>
+<td>客户端请求的范围无效</td>
+</tr>
+<tr>
+<td>417</td>
+<td>Expectation Failed</td>
+<td>服务器无法满足Expect的请求头信息</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error</td>
+<td>服务器内部错误，无法完成请求</td>
+</tr>
+<tr>
+<td>501</td>
+<td>Not Implemented</td>
+<td>服务器不支持请求的功能，无法完成请求</td>
+</tr>
+<tr>
+<td>502</td>
+<td>Bad Gateway</td>
+<td>作为网关或者代理工作的服务器尝试执行请求时，从远程服务器接收到了一个无效的响应</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable</td>
+<td>由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的Retry-After头信息中</td>
+</tr>
+<tr>
+<td>504</td>
+<td>Gateway Time-out</td>
+<td>充当网关或代理的服务器，未及时从远端服务器获取请求</td>
+</tr>
+<tr>
+<td>505</td>
+<td>HTTP Version not supported</td>
+<td>服务器不支持请求的HTTP协议的版本，无法完成处理</td>
+</tr>
+</tbody></table>
+<h2 id="2-TCP三次握手"><a href="#2-TCP三次握手" class="headerlink" title="2. TCP三次握手"></a>2. TCP三次握手</h2><p>个人将三次握手总结为Hello、Hi法则。</p>
+<blockquote>
+<p>即C角色(Client) Say Hello ==&gt; S角色(Server)<br>S角色 Say Hi and Hello ==&gt; C角色<br>C角色 Say Hi ==&gt; S角色</p>
+</blockquote>
+<p>自此也就完成了三次握手的操作。</p>
+<h2 id="3-web-worker"><a href="#3-web-worker" class="headerlink" title="3. web worker"></a>3. web worker</h2><p>运行在后台的Js脚本，为JavaScript创造多线程环境。<br>创建<code>var worker = new Worker(&#39;work.js&#39;)</code><br>浏览器支持</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if(typeof(Worker)!&#x3D;&#x3D;&quot;undefined&quot;)</span><br><span class="line">  &#123;</span><br><span class="line">  	&#x2F;&#x2F; Yes! Web worker support!</span><br><span class="line">  	&#x2F;&#x2F; Some code.....</span><br><span class="line">  &#125;</span><br><span class="line">else</span><br><span class="line">  &#123;</span><br><span class="line">  	&#x2F;&#x2F; Sorry! No Web Worker support..</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p><em>本节未完</em></p>
+<h2 id="4-Cookie-＆-Session-amp-LocalStorage-amp-SessionStorage"><a href="#4-Cookie-＆-Session-amp-LocalStorage-amp-SessionStorage" class="headerlink" title="4. Cookie ＆ Session &amp; LocalStorage &amp; SessionStorage"></a>4. Cookie ＆ Session &amp; LocalStorage &amp; SessionStorage</h2><h3 id="4-1-Cookie-amp-Session"><a href="#4-1-Cookie-amp-Session" class="headerlink" title="4.1 Cookie &amp; Session"></a>4.1 Cookie &amp; Session</h3><p>目前来讲，我对于Cookie与Session的理解是：Cookie是真实存在的东西；而Session则是一个概念，一种实现机制。无论是Cookie，Session，Localstorage还是SessionStorage，其本质或目的都是用作存储。<br>   关于Cookie在同一台电脑上的共享，网络找到的最为专业的解答是：<code>同一用户使用的同一内核的浏览器的Cookies是同一个</code></p>
+<h3 id="4-2-LocalStorage-amp-SessionStorage（以下简称为LS-amp-SS）"><a href="#4-2-LocalStorage-amp-SessionStorage（以下简称为LS-amp-SS）" class="headerlink" title="4.2 LocalStorage &amp; SessionStorage（以下简称为LS &amp; SS）"></a>4.2 LocalStorage &amp; SessionStorage（以下简称为LS &amp; SS）</h3><p>LS 与 SS在存储数据大小上一般均为5M。LS若非被清除，否则永久保存，而 SS 则只在当前会话窗口有效</p>
+<h4 id="注：关于token"><a href="#注：关于token" class="headerlink" title="注：关于token"></a>注：关于token</h4><h2 id="5-跨域"><a href="#5-跨域" class="headerlink" title="5. 跨域"></a>5. 跨域</h2><h3 id="5-1-跨域定义"><a href="#5-1-跨域定义" class="headerlink" title="5.1 跨域定义"></a>5.1 跨域定义</h3><p>跨域，是指浏览器不能执行其他网站的脚本。它是由浏览器的同源策略造成的，是浏览器对JavaScript实施的安全限制。而所谓的同源则是指，域名、协议、端口均为相同。</p>
+<h3 id="5-2-跨域解决方法"><a href="#5-2-跨域解决方法" class="headerlink" title="5.2 跨域解决方法"></a>5.2 跨域解决方法</h3><h4 id="5-2-1-代理解决跨域问题详解-👈"><a href="#5-2-1-代理解决跨域问题详解-👈" class="headerlink" title="5.2.1 代理解决跨域问题详解 👈"></a>5.2.1 <a href="https://segmentfault.com/a/1190000010719058" target="_blank" rel="noopener">代理解决跨域问题详解</a> 👈</h4><h5 id="代理与反向代理的理解"><a href="#代理与反向代理的理解" class="headerlink" title="代理与反向代理的理解"></a>代理与反向代理的理解</h5><p>代理：在前端代码中解决问题，一对一的方式，即一套前端代码，一个代理域名。<br>反向代理：在后台也就是服务器中解决问题，多对一的方式，即多套前端代码，可共同指向同一台反向代理服务器，再由反向代理服务器去调用目标服务器。</p>
+<h4 id="5-2-2-jsonp跨域"><a href="#5-2-2-jsonp跨域" class="headerlink" title="5.2.2 jsonp跨域"></a>5.2.2 jsonp跨域</h4><p>jsonp跨域其实也是JavaScript设计模式中的一种代理模式。在html页面中通过相应的标签从不同域名下加载静态资源文件是被浏览器允许的，所以我们可以通过这个“犯罪漏洞”来进行跨域。一般，我们可以动态的创建script标签，再去请求一个带参网址来实现跨域通信</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;原生的实现方式</span><br><span class="line">let script &#x3D; document.createElement(&#39;script&#39;);</span><br><span class="line"></span><br><span class="line">script.src &#x3D; &#39;http:&#x2F;&#x2F;www.nealyang.cn&#x2F;login?username&#x3D;Nealyang&amp;callback&#x3D;callback&#39;;</span><br><span class="line"></span><br><span class="line">document.body.appendChild(script);</span><br><span class="line"></span><br><span class="line">function callback(res) &#123;</span><br><span class="line">  console.log(res);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同样，jquery也支持jsonp的实现方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">    url:&#39;http:&#x2F;&#x2F;www.nealyang.cn&#x2F;login&#39;,</span><br><span class="line">    type:&#39;GET&#39;,</span><br><span class="line">    dataType:&#39;jsonp&#39;,&#x2F;&#x2F;请求方式为jsonp</span><br><span class="line">    jsonpCallback:&#39;callback&#39;,</span><br><span class="line">    data:&#123;</span><br><span class="line">        &quot;username&quot;:&quot;Nealyang&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>以上方法虽然好用，但是仅支持get请求</p>
+<h4 id="5-2-3-更多跨域解决方法👇"><a href="#5-2-3-更多跨域解决方法👇" class="headerlink" title="5.2.3 更多跨域解决方法👇"></a>5.2.3 更多跨域解决方法👇</h4><ul>
+<li>document.domain + iframe 跨域</li>
+<li>window.name + iframe 跨域</li>
+<li>location.hash + iframe 跨域</li>
+<li>postMessage跨域</li>
+<li>跨域资源共享 CORS</li>
+<li>WebSocket协议跨域</li>
+<li>node代理跨域</li>
+<li>nginx代理跨域</li>
+</ul>
+<p>了解以上更多解决跨域方法，还请移步原作者文章👇</p>
+<blockquote>
+<p>作者：Neal_yang<br>链接：<a href="https://juejin.im/post/5a2f92c65188253e2470f16d" target="_blank" rel="noopener">https://juejin.im/post/5a2f92c65188253e2470f16d</a><br>来源：掘金</p>
+</blockquote>
+<h2 id="MD5加密算法"><a href="#MD5加密算法" class="headerlink" title="MD5加密算法"></a>MD5加密算法</h2><hr>
+<h6 id="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人邮箱。"><a href="#以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人邮箱。" class="headerlink" title="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人邮箱。"></a>以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人<a href="mailto:babalalw@gmail.com">邮箱</a>。</h6></article><nav id="pagination"><div class="pagination clear-fix"><div class="page-prev pull-left"><a href="/2020/03/21/w#SOS-applet-development-log/"><i class="fa fa-chevron-left"></i><span>SOS applet development log</span></a></div><div class="page-next pull-right"><a href="/2020/02/25/w#uni-app-status-bar/"><span>uni-app status_bar</span><i class="fa fa-chevron-right"></i></a></div></div></nav></div></div><footer><div id="footer-inner"><div class="social-icons"></div><p class="design-info">power by <a href="">Hexo</a> | theme <a href="">Teminal</a> </p><p class="copyright">Copyright © Scott Stark Blog 2022</p></div></footer><script src="/js/nav.js"></script><script src="/js/scroll.js"></script><script src="/js/index.js"></script></body></html>
