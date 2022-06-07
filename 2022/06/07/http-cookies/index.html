@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="referrer" content="no-referrer"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>http/cookies | Scott Stark</title><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><script src="/js/third-party/jquery.min.js">           </script><script src="/js/third-party/velocity.min.js">           </script><script src="/js/third-party/velocity.ui.min.js">           </script><link rel="icon" href="/img/scott.ico"><meta name="keywords" content="前端博客,Scott_Stark,blog,前端,软件开发,个人博客,个人网站,undefined"><meta name="generator" content="Hexo 4.2.0"></head><body><nav id="nav-bar"><nav class="clear-fix" id="nav-container"><div class="pull-left" id="page-home"><a href="/">Scott Stark</a></div><i class="fa fa-bars pull-right" id="toggle-nav" aria-hidden="true"></i><ul class="pull-right" id="navs"><li><a class="nav" href="/">Home</a></li><li><a class="nav" href="/about">About</a></li><li><a class="nav" href="/tags">Tags</a></li></ul></nav></nav><header id="header-info"><div id="header-container"><div id="site-info"><div id="terminal-pl"><div id="top-bar"><ul id="control"><li class="btn"></li><li class="btn"></li><li class="btn"></li></ul><div id="file-path"><i class="fa fa-folder folder-ic" aria-hidden="true"></i> Scott Stark @  HTTP/COOKIES</div></div><div id="code-pl">Last updated: 2022-06-07<br>Scott Stark:~ Desktop <span class="code-pl-input">$ Please don't reprint without permission</span><br><br>> Post.all <br></div></div></div></div></header><div id="content-outer"><div id="content-inner"><article id="post"><a class="article-title">http/cookies</a><time class="article-date"><i class="fa fa-calendar" aria-hidden="true"></i> 2022-06-07</time><h1 id="About-Cookies"><a href="#About-Cookies" class="headerlink" title="About Cookies"></a>About Cookies</h1><h2 id="1-Cookie"><a href="#1-Cookie" class="headerlink" title="1. Cookie"></a>1. <code>Cookie</code></h2><p>  &emsp;&emsp;一般来讲，由服务端创建并存储携带在 <code>http Response Headers</code> 的 <code>Set-Cookie</code> 中，并在浏览器下次请求同一服务器时，通过 <code>Request Headers</code> 的 <code>Cookie</code> 字段发送给后端。<br/><br>  <code>Cookie</code> 是无状态http的<em>状态</em>。</p>
+<p>  <img src="asserts/cookies-circle.png" alt="cookie 流转图"></p>
+<p>  <code>Cookie</code> 目前主流用法：</p>
+<ul>
+<li><p>会话状态管理；</p>
+</li>
+<li><p>个性化设置/推荐（广告投放）；</p>
+</li>
+<li><p>浏览器行为跟踪；</p>
+<p>&emsp;&emsp;同时，不仅仅是只有服务端才可创建 <code>Cookie</code>，浏览器或者说客户端也可操作 <code>Cookie</code>，如：<code>document.cookie</code>。<span id="cookies-create-javascript" /></p>
+</li>
+</ul>
+<h2 id="2-Cookie-生命周期"><a href="#2-Cookie-生命周期" class="headerlink" title="2. Cookie 生命周期"></a>2. <code>Cookie</code> 生命周期</h2><p>  &emsp;&emsp;<code>Cookie</code> 的生命周期可以通过 <code>Expires</code> 或 <code>Max-Age</code> 来定义。</p>
+<p>  &emsp;&emsp;有趣的是，经过我的测试发现无论是在前端（浏览器）上直接设置 <code>Expires/Max-Age</code> 还是经过 <code>Node</code> 服务器进行设置 <code>Expires/Max-Age</code> 其最终都会被计算成日期传到前端。</p>
+<p>  &emsp;&emsp;也就是说，在前端可以看到或者说获取到的 <code>Cookie</code> 值其实只有两种，分别是 <code>Date()</code> 类型和 <code>Session</code> 。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">🥇 Date() 日期类型</span><br><span class="line">🥈 Session &#x2F;&#x2F; 仅在当前会话有效</span><br></pre></td></tr></table></figure>
+
+<p>  &emsp;&emsp;关于 <code>Cookie</code> 过期验证，没什么好验证的，过期的 <code>Cookie</code> 就直接被浏览器删掉了，根本到不了后端。就算你手动添加一个，那也不是之前那个了，因为那就相当于又重新生效了一个同名 <code>Cookie</code> 而已。</p>
+<h2 id="3-限制访问-Cookie"><a href="#3-限制访问-Cookie" class="headerlink" title="3. 限制访问 Cookie"></a>3. 限制访问 <code>Cookie</code></h2><p>  &emsp;&emsp;有两种方法可以确保 <code>Cookie</code> 被安全发送，并且不会被意外的参与者或脚本访问：<code>Secure</code> 属性和 <code>HttpOnly</code> 属性<sup><a href="#cookies-of-mdn">[1]</a></sup>。</p>
+<ul>
+<li><code>Secure</code> 只能用在https协议上传输；</li>
+<li><code>HttpOnly</code> 客户端通过 <code>document.cookie</code> 无法获取设置该属性的 <code>Cookie</code> 字段；</li>
+</ul>
+<h2 id="4-Cookie-作用域"><a href="#4-Cookie-作用域" class="headerlink" title="4. Cookie 作用域 "></a>4. <code>Cookie</code> 作用域 <span id="cookies-scope" /></h2><p>  &emsp;&emsp;<code>Domain</code> 和 <code>Path</code> 标识定义了 <code>Cookie</code> 的作用域：即允许 <code>Cookie</code> 应该发送给哪些URL<sup><a href="#cookies-of-mdn">[1]</a></sup>。</p>
+<ul>
+<li><p><code>Domain</code>：<code>Cookie</code> 作用的域名，指定 <code>Domain</code> 时，作用的域名为指定域名及其子域名，若未指定，则默认为当前 <code>origin</code> 且不包含子域名；</p>
+</li>
+<li><p><code>Path</code>：总结为两句话。若设置了，则已设置的值为准，若未设置，则由 <code>URL</code> 的 <code>path</code> 的最后一个 <code>/</code> 向前截取，截取的结果作为 <code>Cookie</code> 的 <code>Path</code>。其作用域为当前 <code>path</code> 路径下的所有子路径，包含当前路径<sup><a href="#cookie-path-rules">[2]</a></sup>；</p>
+</li>
+</ul>
+<h2 id="5-SameSite-属性"><a href="#5-SameSite-属性" class="headerlink" title="5. SameSite 属性"></a>5. <code>SameSite</code> 属性</h2><p>  &emsp;&emsp;<code>SameSite</code> 顾名思义——同一站点的配置项，理解来讲就是来限制 <code>Cookie</code> 传播是否受”同一站点—— <code>SameSite</code> “的限制。</p>
+<p>  &emsp;&emsp;<code>MDN</code> 里这样描述：<code>SameSite Cookie</code> 允许服务器要求某个 <code>cookie</code> 在跨站请求时不会被发送，从而可以阻止跨站请求伪造攻击（<code>CSRF</code>）<sup><a href="#cookies-of-mdn">[1]</a></sup>。</p>
+<p>  <code>SameSite</code> 共有下面三种值<sup><a href="#cookie-samesite-attrs">[3]</a></sup><sup><a href="#what-is-cookie-samesite">[4]</a></sup>：</p>
+<ul>
+<li><p><code>None</code>：就是没有限制，<code>Cookie</code> 想怎么传就怎么传；</p>
+</li>
+<li><p><code>Strict</code>：<code>Strict</code>（严格）模式，严格到只有当前 <code>top.window</code> 对象的 <code>url</code> 及其子 <code>url</code> 才有资格传播，但不代表一定会传播，因为还要满足 <a href="#cookies-scope"><code>Cookie</code> 作用域</a> 的限制；</p>
+</li>
+<li><p><code>Lax</code>：<code>Lax</code>（不严格）模式，即存在一些情况可以传播 <code>Cookie</code>；</p>
+<p>具体情况见下图描述⬇️。<sup><a href="#cookie-samesite-conf">[5]</a></sup></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19506176-0f3e256e10049c7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1102/format/webp" alt="SameSite"></p>
+</li>
+</ul>
+<h2 id="6-Cookie-prefixes"><a href="#6-Cookie-prefixes" class="headerlink" title="6. Cookie prefixes"></a>6. <code>Cookie prefixes</code></h2><p>  &emsp;&emsp;<code>Cookie prefixes</code> 指在 <code>Cookie</code> 名前添加绑定的前缀：<code>&quot;__Host-&quot;</code> 与 <code>&quot;__Secure-&quot;</code>。</p>
+<ul>
+<li><code>__Host-</code>：<code>MDN</code> 这么解释道：它需要设置 <code>Secure</code> 属性，并且来自安全的 <code>origin</code>，同时还要设置 <code>Path</code> 为 <code>/</code>，但 <code>Domain</code> 要为默认值，即只有在当前安全的 <code>host</code> 下才可传播发送该 <code>Cookie</code>, 同时 <code>MDN</code> 称之为 <code>domain-locked</code>, 我理解其为<code>&quot;被锁定的域&quot;</code>。</li>
+<li><code>__Secure-</code>：相较于 <code>__Host-</code>，其仅要求来自安全的 <code>origin</code>，并设置 <code>Secure</code> 属性才可传播发送。</li>
+</ul>
+<h2 id="7-JavaScript-通过-Document-cookie-访问-Cookie"><a href="#7-JavaScript-通过-Document-cookie-访问-Cookie" class="headerlink" title="7. JavaScript 通过 Document.cookie 访问 Cookie"></a>7. <code>JavaScript</code> 通过 <code>Document.cookie</code> 访问 <code>Cookie</code></h2><p>  &emsp;&emsp;在<a href="#cookies-create-javascript">第一章节</a>中就已经剪短提到过通过 <code>JavaScript</code> 对 <code>Cookie</code> 进行操作的方法，但该方法仅可访问创建非 <code>HttpOnly</code> 标记的 <code>Cookie</code>。</p>
+<h2 id="8-Cookie-安全"><a href="#8-Cookie-安全" class="headerlink" title="8. Cookie 安全"></a>8. <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies#%E5%AE%89%E5%85%A8" target="_blank" rel="noopener"><code>Cookie</code> 安全</a></h2><p>  &emsp;&emsp;凡事涉及安全的问题都不会是小问题。</p>
+<p>  &emsp;&emsp;这里不太好概述，理解的也不深，直接贴链接吧</p>
+<hr>
+<blockquote>
+<p>参考资料:</p>
+<p>[1]. <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies" target="_blank" rel="noopener">HTTP cookies of MDN</a> <span id="cookies-of-mdn" /></p>
+<p>[2]. <a href="https://www.jianshu.com/p/48556e5c44f5" target="_blank" rel="noopener">Cookie的path值的默认规则</a> <span id="cookie-path-rules" /></p>
+<p>[3]. <a href="https://www.youtube.com/watch?v=aUF2QCEudPo" target="_blank" rel="noopener">Cookie SameSite</a> <span id="cookie-samesite-attrs" /></p>
+<p>[4]. <a href="https://www.leixue.com/ask/what-is-samesite" target="_blank" rel="noopener">SameSite 是什么</a> <span id="what-is-cookie-samesite" /></p>
+<p>[5]. <a href="https://www.jianshu.com/p/dd73c27ab8d6" target="_blank" rel="noopener">Cookie中的SameSite设置</a> <span id="cookie-samesite-conf" /></p>
+<p>[6]. <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies#%E5%AE%89%E5%85%A8" target="_blank" rel="noopener">Cookie 安全 of MDN</a> <span id="cookie-security-of-mdn" /></p>
+<p>[7]. <a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown syntax</a></p>
+</blockquote>
+<p>☃︎还是得动手操作</p>
+</article><nav id="pagination"><div class="pagination clear-fix"></div></nav></div></div><footer><div id="footer-inner"><div class="social-icons"></div><p class="design-info">power by <a href="">Hexo</a> | theme <a href="">Teminal</a> </p><p class="copyright">Copyright © Scott Stark Blog 2022</p></div></footer><script src="/js/nav.js"></script><script src="/js/scroll.js"></script><script src="/js/index.js"></script></body></html>
