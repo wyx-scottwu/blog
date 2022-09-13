@@ -2,9 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.scottwu.cn/2022/08/18/0730day2/</loc>
+    <loc>https://blog.scottwu.cn/2022/09/13/0730day04/</loc>
     
-    <lastmod>2022-08-18</lastmod>
+    <lastmod>2022-09-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.scottwu.cn/2022/09/04/0730day03/</loc>
+    
+    <lastmod>2022-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.scottwu.cn/2022/09/03/0730day11/</loc>
+    
+    <lastmod>2022-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.scottwu.cn/2022/08/18/0730day02/</loc>
+    
+    <lastmod>2022-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.scottwu.cn/2022/06/14/es6-generator/</loc>
+    
+    <lastmod>2022-09-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +94,7 @@
 
   <url>
     <loc>https://blog.scottwu.cn/</loc>
-    <lastmod>2022-08-18</lastmod>
+    <lastmod>2022-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,14 +102,21 @@
   
   <url>
     <loc>https://blog.scottwu.cn/tags/%E7%88%AA%E5%93%87notes/</loc>
-    <lastmod>2022-08-18</lastmod>
+    <lastmod>2022-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.scottwu.cn/tags/ECMAScript/</loc>
+    <lastmod>2022-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.scottwu.cn/tags/HTTP/</loc>
-    <lastmod>2022-08-18</lastmod>
+    <lastmod>2022-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -82,7 +125,7 @@
   
   <url>
     <loc>https://blog.scottwu.cn/categories/notes/</loc>
-    <lastmod>2022-08-18</lastmod>
+    <lastmod>2022-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
