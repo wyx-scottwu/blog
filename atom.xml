@@ -6,7 +6,7 @@
   <link href="https://blog.scottwu.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.scottwu.cn/"/>
-  <updated>2022-09-13T14:39:33.872Z</updated>
+  <updated>2022-09-22T14:10:38.432Z</updated>
   <id>https://blog.scottwu.cn/</id>
   
   <author>
@@ -17,23 +17,51 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>0730day04</title>
+    <title>浏览器API</title>
+    <link href="https://blog.scottwu.cn/2022/09/21/0730day05/"/>
+    <id>https://blog.scottwu.cn/2022/09/21/0730day05/</id>
+    <published>2022-09-21T13:56:14.000Z</published>
+    <updated>2022-09-22T14:10:38.432Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a><code>Content</code></h2><hr><h6 id="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。"><a href="#以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。" class="headerlink" title="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 ✉️ 邮箱。"></a>以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 <a href="mailto:wyx.scottwu@gmail.com">✉️ 邮箱</a>。</h6>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Content&quot;&gt;&lt;a href=&quot;#Content&quot; class=&quot;headerlink&quot; title=&quot;Content&quot;&gt;&lt;/a&gt;&lt;code&gt;Content&lt;/code&gt;&lt;/h2&gt;&lt;hr&gt;
+&lt;h6 id=&quot;以上描述及解决方案均属个人观点，若您存在任何疑问及意见</summary>
+      
+    
+    
+    
+    <category term="notes" scheme="https://blog.scottwu.cn/categories/notes/"/>
+    
+    
+    <category term="爪哇notes" scheme="https://blog.scottwu.cn/tags/%E7%88%AA%E5%93%87notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS模块化</title>
     <link href="https://blog.scottwu.cn/2022/09/13/0730day04/"/>
     <id>https://blog.scottwu.cn/2022/09/13/0730day04/</id>
     <published>2022-09-13T14:38:16.000Z</published>
-    <updated>2022-09-13T14:39:33.872Z</updated>
+    <updated>2022-09-13T14:53:05.747Z</updated>
     
-    <content type="html"><![CDATA[<hr><h6 id="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。"><a href="#以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。" class="headerlink" title="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 ✉️ 邮箱。"></a>以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 <a href="mailto:wyx.scottwu@gmail.com">✉️ 邮箱</a>。</h6>]]></content>
+    <content type="html"><![CDATA[<h2 id="script-标签-async-和-defer-属性"><a href="#script-标签-async-和-defer-属性" class="headerlink" title="script 标签 async 和 defer 属性"></a><code>script</code> 标签 <code>async</code> 和 <code>defer</code> 属性</h2><p>  <code>defer</code> 与 <code>async</code> 均是异步下载脚本，不同点在于解析执行的时机不同，<code>defer</code> 较为“温柔“，会排队等待 <code>GUI</code> 线程执行完成后再去执行 <code>js</code> 脚本；而 <code>async</code> 则是在其下载完后便直接解析执行，一毫秒都不会多等。 </p><hr><h6 id="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。"><a href="#以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。" class="headerlink" title="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 ✉️ 邮箱。"></a>以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 <a href="mailto:wyx.scottwu@gmail.com">✉️ 邮箱</a>。</h6>]]></content>
     
     
       
       
-    <summary type="html">&lt;hr&gt;
-&lt;h6 id=&quot;以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。&quot;&gt;&lt;a href=&quot;#以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。&quot; class=&quot;headerlink&quot; title=&quot;以上描述及</summary>
+    <summary type="html">&lt;h2 id=&quot;script-标签-async-和-defer-属性&quot;&gt;&lt;a href=&quot;#script-标签-async-和-defer-属性&quot; class=&quot;headerlink&quot; title=&quot;script 标签 async 和 defer 属性&quot;&gt;&lt;/a&gt;&lt;code&gt;sc</summary>
       
     
     
     
+    <category term="notes" scheme="https://blog.scottwu.cn/categories/notes/"/>
+    
+    
+    <category term="爪哇notes" scheme="https://blog.scottwu.cn/tags/%E7%88%AA%E5%93%87notes/"/>
     
   </entry>
   
