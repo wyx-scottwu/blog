@@ -13,6 +13,6 @@ https://blog.scottwu.cn/tags/
 https://blog.scottwu.cn/about/
 https://blog.scottwu.cn/
 https://blog.scottwu.cn/tags/%E7%88%AA%E5%93%87notes/
-https://blog.scottwu.cn/tags/ECMAScript/
 https://blog.scottwu.cn/tags/HTTP/
+https://blog.scottwu.cn/tags/ECMAScript/
 https://blog.scottwu.cn/categories/notes/

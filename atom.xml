@@ -6,7 +6,7 @@
   <link href="https://blog.scottwu.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.scottwu.cn/"/>
-  <updated>2022-11-28T14:14:18.166Z</updated>
+  <updated>2022-12-01T14:18:24.798Z</updated>
   <id>https://blog.scottwu.cn/</id>
   
   <author>
@@ -17,19 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>0730day07/demo</title>
+    <link href="https://blog.scottwu.cn/2022/12/01/0730day07/demo/"/>
+    <id>https://blog.scottwu.cn/2022/12/01/0730day07/demo/</id>
+    <published>2022-12-01T14:18:13.637Z</published>
+    <updated>2022-12-01T14:18:24.798Z</updated>
+    
+    <content type="html"><![CDATA[LazyMan = (name) => {   // LazyMan('Frank').sleepFirst(5).eat('supper')  var queue = []  const task = () => { console.log(`你好，我是${name}`); next() }  queue.push(task)  const next = () => { const first = queue.shift(); first?.() }  var api = {    _x: queue,    sleep(n) {      const task = () => {        setTimeout(() => { console.log(`我醒了，我刚睡了${n}秒`); next() }, n * 1000)      }      queue.push(task)      return api    },    eat(type) {      const task = () => { console.log(type === 'lunch' ? '吃午餐' : '吃晚餐'); next() }      queue.push(task)      return api    },    sleepFirst(n) {      const task = () => {        setTimeout(() => { console.log(`我醒了，我刚睡了${n}秒`); next() }, n * 1000)      }      queue.unshift(task)      return api    }  }  setTimeout(() => { next() })  return api}]]></content>
+    
+    
+      
+      
+    <summary type="html">LazyMan = (name) =&gt; {   // LazyMan(&#39;Frank&#39;).sleepFirst(5).eat(&#39;supper&#39;)
+  var queue = []
+  const task = () =&gt; { console.log(`你好，我是${name}`);</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>函数式编程</title>
     <link href="https://blog.scottwu.cn/2022/11/28/0730day07/"/>
     <id>https://blog.scottwu.cn/2022/11/28/0730day07/</id>
     <published>2022-11-28T14:10:17.000Z</published>
-    <updated>2022-11-28T14:14:18.166Z</updated>
+    <updated>2022-11-30T14:28:35.697Z</updated>
     
-    <content type="html"><![CDATA[<hr><h6 id="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。"><a href="#以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。" class="headerlink" title="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 ✉️ 邮箱。"></a>以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 <a href="mailto:wyx.scottwu@gmail.com">✉️ 邮箱</a>。</h6>]]></content>
+    <content type="html"><![CDATA[<h2 id="函数式概念"><a href="#函数式概念" class="headerlink" title="函数式概念"></a>函数式概念</h2><p>个人理解：旨在通过一个个封装过的可复用的函数来解决问题。</p><h3 id="命令式编程"><a href="#命令式编程" class="headerlink" title="命令式编程"></a>命令式编程</h3><p>即通过一步步清晰的操作而不是运用抽象的函数来解决问题。</p><h3 id="声明式编程"><a href="#声明式编程" class="headerlink" title="声明式编程"></a>声明式编程</h3><h3 id="函数柯里化"><a href="#函数柯里化" class="headerlink" title="函数柯里化"></a>函数柯里化</h3><h3 id="纯函数"><a href="#纯函数" class="headerlink" title="纯函数"></a>纯函数</h3><p>输出确定，则输出确定的函数</p><ul><li>无状态</li><li>无副作用</li></ul><h4 id="回忆：http幂等请求"><a href="#回忆：http幂等请求" class="headerlink" title="回忆：http幂等请求"></a>回忆：http幂等请求</h4><p>即同一请求，请求一次与多次的结果与影响是相同的。</p><h3 id="tree-shaking"><a href="#tree-shaking" class="headerlink" title="tree shaking"></a>tree shaking</h3><p>按需加载</p><h3 id="无关时序"><a href="#无关时序" class="headerlink" title="无关时序"></a>无关时序</h3><hr><h6 id="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。"><a href="#以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。" class="headerlink" title="以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 ✉️ 邮箱。"></a>以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人 <a href="mailto:wyx.scottwu@gmail.com">✉️ 邮箱</a>。</h6>]]></content>
     
     
       
       
-    <summary type="html">&lt;hr&gt;
-&lt;h6 id=&quot;以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。&quot;&gt;&lt;a href=&quot;#以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人-✉️-邮箱。&quot; class=&quot;headerlink&quot; title=&quot;以上描述及</summary>
+    <summary type="html">&lt;h2 id=&quot;函数式概念&quot;&gt;&lt;a href=&quot;#函数式概念&quot; class=&quot;headerlink&quot; title=&quot;函数式概念&quot;&gt;&lt;/a&gt;函数式概念&lt;/h2&gt;&lt;p&gt;个人理解：旨在通过一个个封装过的可复用的函数来解决问题。&lt;/p&gt;
+&lt;h3 id=&quot;命令式编程&quot;&gt;&lt;a href=&quot;#</summary>
       
     
     
