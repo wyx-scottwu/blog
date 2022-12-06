@@ -1,5 +1,5 @@
 ---
-description: This is my first gitbook page
+description: WelcomeThis is my first gitbook page
 ---
 
 # 🇨🇳 Welcome
