@@ -2,7 +2,7 @@
 description: This is my first gitbook page
 ---
 
-# 🐛 Welcome 🇨🇳
+# 🇨🇳 Welcome
 
 ```javascript
 (()=>{
