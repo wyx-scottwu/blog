@@ -1,7 +1,12 @@
 # Table of contents
 
-* [🐶 Welcome 🇨🇳](README.md)
+* [🐛 Welcome 🇨🇳](README.md)
 
-## study notes -- zw
+## study notes
 
-* [Page 1](study-notes-zw/page-1.md)
+* [Page 1](study-notes/page-1.md)
+
+## zw
+
+* [Page 3](zw/page-3.md)
+* [Page 2](zw/page-2.md)
