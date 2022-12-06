@@ -4,4 +4,4 @@
 
 ## study notes -- zw
 
-* [Page 1](study-notes/page-1.md)
+* [Page 1](study-notes-zw/page-1.md)
