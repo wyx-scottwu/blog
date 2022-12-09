@@ -4,9 +4,10 @@
 
 ## 爪哇\_1203 <a href="#zhao-wa" id="zhao-wa"></a>
 
-* [📅 MONTH 22 12](zhao-wa/month-22-12/README.md)
+* [📅 MONTH 22 12](group-1/page-1.md)
   * [I JavaScript 高级用法](zhao-wa/month-22-12/i-javascript-gao-ji-yong-fa.md)
+  * [II JavaScript 高级用法](zhao-wa/month-22-12/ii-javascript-gao-ji-yong-fa.md)
 
 ## 杂记
 
-* [😀 Page 3](za-ji/page-3.md)
+* [😀 Untitled](za-ji/untitled.md)
