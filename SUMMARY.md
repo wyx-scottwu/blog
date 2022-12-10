@@ -6,7 +6,8 @@
 
 * [📅 MONTH 22 12](group-1/page-1.md)
   * [I JavaScript 高级用法](zhao-wa/month-22-12/i-javascript-gao-ji-yong-fa.md)
-  * [II JavaScript 高级用法](zhao-wa/month-22-12/ii-javascript-gao-ji-yong-fa.md)
+  * [II OOP / protoType](zhao-wa/month-22-12/ii-oop-prototype.md)
+  * [III Promise](zhao-wa/month-22-12/iii-promise.md)
 * [SUMMARY](zhao-wa/summary.md)
 
 ## 杂记

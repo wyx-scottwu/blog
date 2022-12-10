@@ -1,8 +1,8 @@
 ---
-description: 2/2
+description: OOP / ProtoType
 ---
 
-# II JavaScript 高级用法
+# II OOP / protoType
 
 <figure><img src="https://pica.zhimg.com/80/v2-32cd3feef8b961e3c9d8a6cb673028be_720w.webp?source=1940ef5c" alt=""><figcaption></figcaption></figure>
 
