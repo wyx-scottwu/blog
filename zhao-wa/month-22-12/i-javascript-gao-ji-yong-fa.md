@@ -119,6 +119,27 @@ _个人理解：_ 活动对象是变量对象的可访问的版本。
      * 否则判断`base value` 值是否为`Environment Record`是则为 `ImplicitThisValue(ref)`
    * `ref` 不是一个 `Reference` `this`值为`undefined`
 
+看到这里发现有这些未知的名词&#x20;
+
+1. `MemberExpression`简单理解，就是&#x20;
+2. `Reference`
+3. `GetBase`
+4. `base value`
+5. `Environment Record`
+6. `ImplicitThisValue`
+
+
+
+
+
+
+
+
+
+
+
+
+
 > TIPS 💡
 >
 > * [先早 personal-blog](https://github.com/xianzao/xianzao-interview/issues)
