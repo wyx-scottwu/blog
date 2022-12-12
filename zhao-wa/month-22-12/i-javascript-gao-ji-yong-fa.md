@@ -4,7 +4,7 @@ description: 1/2
 
 # I JavaScript 高级用法
 
-I 原型相关
+### I 原型相关
 
 #### I.I protoType
 
@@ -121,14 +121,22 @@ _个人理解：_ 活动对象是变量对象的可访问的版本。
 
 看到这里发现有这些未知的名词&#x20;
 
-1. `MemberExpression`简单理解，就是&#x20;
-2. `Reference`
+1. `MemberExpression这里就`简单理解 `()左边的部分吧。` &#x20;
+2. `Reference`&#x20;
 3. `GetBase`
 4. `base value`
 5. `Environment Record`
 6. `ImplicitThisValue`
 
+{% hint style="info" %}
+此处参考这篇文章，能够更好的理解。[https://blog.csdn.net/qq\_39759115/article/details/78733251](https://blog.csdn.net/qq\_39759115/article/details/78733251)
+{% endhint %}
 
+#### 闭包
+
+指能够访问自由变量的函数。
+
+_自由变量_ 指在函数中使用，但不是函数参数，也不是函数局部变量的一种变量。
 
 
 
