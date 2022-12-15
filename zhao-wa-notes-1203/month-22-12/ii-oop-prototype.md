@@ -14,19 +14,19 @@ description: OOP / ProtoType
 
 ### 手写 `call` / `apply` / `bind`
 
-```js
-Function.prototype._call = function () {
-  const [caller, ...args] = arguments;
+<pre class="language-javascript"><code class="lang-javascript"><strong>// Function.prototype._apply = function () {
+</strong><strong>Function.prototype._call = function () {
+</strong><strong>  // const [caller, args] = arguments;
+</strong>  const [caller, ...args] = arguments;
 
   caller._callFn = this;
-
   const res = caller._callFn(...args);
 
   delete caller._callFn;
 
   return res;
 }
-```
+</code></pre>
 
 `bind` 参数略有区别，会合并参数
 
