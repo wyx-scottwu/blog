@@ -14,46 +14,76 @@ description: OOP / ProtoType
 
 ### 手写 `call` / `apply` / `bind`
 
-```js
-Function.prototype._call = function () {
-  const [caller, ...args] = arguments;
+<pre class="language-javascript" data-overflow="wrap" data-line-numbers><code class="lang-javascript"><strong>// Function.prototype._apply = function () {
+</strong><strong>Function.prototype.__call = function () {
+</strong><strong>  // const [caller, args] = arguments;
+</strong>  const [caller, ...args] = arguments;
 
   caller._callFn = this;
-
   const res = caller._callFn(...args);
 
   delete caller._callFn;
 
   return res;
 }
-```
+</code></pre>
 
-`bind` 参数略有区别，会合并参数
+#### `bind - 1` 参数略有区别，会合并参数
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```javascript
-Function.prototype.bind = function () {
+// 先实现普通版 bind
+Function.prototype.__bind = function () {
   const calledFn = this;
   const [binder, ...args] = arguments;
 
   const bindFn = function () {
     return calledFn.call(
       // 判断是否 被当作了构造函数
-      this instanceof bindFn ? this : binder,
+      binder,
       ...arguments,
       ...args)
   }
-  // 继承调用者的原型。
-  bindFn.prototype = this.prototype;
   return bindFn;
 }
 ```
+{% endcode %}
 
-### `new`
+#### `bind - 2` `bind`后的函数还可以作为`构造器`使用 _这该如何实现？_
 
+`bind - 2` 实现前要先看下`new`是如何实现的或者其内部的机制如何
+
+> ```javascript
+> // 构造函数 Foo() { ... }
+> ```
+>
+> 当代码 `new Foo(...)` 执行时，会发生以下事情：
+>
+> 1. 一个继承自 `Foo.prototype` 的新对象被创建。
+> 2. 使用指定的参数调用构造函数 _`Foo`_，并将 [`this`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/this) 绑定到新创建的对象。
+>    * `new Foo` 等同于 _`new Foo`_`()`，也就是没有指定参数列表，_`Foo`_ 不带任何参数调用的情况。
+> 3. 由构造函数返回的对象就是 `new` 表达式的结果。如果构造函数没有显式返回一个对象，则使用步骤 1 创建的对象。（一般情况下，构造函数不返回值，但是用户可以选择主动返回对象，来覆盖正常的对象创建步骤）
+>
+>
+>
+> 【参考链接】： [https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```javascript
+/**
+ * 因为 new 为特殊操作符，所以用 function 来代替实现
+ * /
 
-
+function operatorNew(generator, ...args) {
+  
+}
 ```
+{% endcode %}
+
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+```
+{% endcode %}
 
 ### 类数组
 
