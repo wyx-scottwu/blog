@@ -14,10 +14,12 @@ description: OOP / ProtoType
 
 ### 手写 `call` / `apply` / `bind`
 
-<pre class="language-javascript" data-overflow="wrap" data-line-numbers><code class="lang-javascript"><strong>// Function.prototype._apply = function () {
-</strong><strong>Function.prototype.__call = function () {
-</strong><strong>  // const [caller, args] = arguments;
-</strong>  const [caller, ...args] = arguments;
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+// Function.prototype._apply = function () {
+Function.prototype.__call = function () {
+  // const [caller, args] = arguments;
+  const [caller, ...args] = arguments;
 
   caller._callFn = this;
   const res = caller._callFn(...args);
@@ -26,7 +28,8 @@ description: OOP / ProtoType
 
   return res;
 }
-</code></pre>
+```
+{% endcode %}
 
 #### `bind - 1` 参数略有区别，会合并参数
 
@@ -72,13 +75,26 @@ Function.prototype.__bind = function () {
 ```javascript
 /**
  * 因为 new 为特殊操作符，所以用 function 来代替实现
- * /
+ */
 
-function operatorNew(generator, ...args) {
-  
+function operatorNew(_Constructor, ...args) {
+  // 以 _Constructor.prototype 为原型创建空对象。
+  const tempRes = Object.create(_Constructor.prototype);
+  // 以新创建的空对象作为 this 调用构造函数 _Constructor
+  const constructRes = _Constructor.apply(tempRes, args);
+  // 判断构造函数返回结果是否为对象。  
+  const realRes = typeof constructRes === 'object' 
+    ? constructRes
+    : tempRes;
+  return realRes;
 }
 ```
 {% endcode %}
+
+从上面代码的`7-9`行可以看出如下两个细节
+
+1. 构造函数被调用时，需要接收新的`this`
+2. 新的`this`是以构造函数原型为原型创建的
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
