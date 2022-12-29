@@ -13,6 +13,8 @@
   * [V 浏览器事件模型&请求](zhao-wa-notes-1203/month-22-12/v-liu-lan-qi-shi-jian-mo-xing-qing-qiu.md)
   * [VI.I JavaScript 垃圾回收与内存泄漏](zhao-wa-notes-1203/month-22-12/vi.i-javascript-la-ji-hui-shou-yu-nei-cun-xie-lou.md)
   * [VI.II JavaScript 运行机制](zhao-wa-notes-1203/month-22-12/vi.ii-javascript-yun-hang-ji-zhi.md)
+  * [VII 函数式编程](zhao-wa-notes-1203/month-22-12/vii-han-shu-shi-bian-cheng.md)
+  * [VIII TS](zhao-wa-notes-1203/month-22-12/viii-ts.md)
 * [SUMMARY](zhao-wa-notes-1203/summary.md)
 
 ## 杂记

@@ -20,12 +20,5 @@ description: VI.I JavaScript 垃圾回收与内存泄漏
 
 
 
+{% file src="../../.gitbook/assets/DAY_06JavaScript的运行机制.pdf" %}
 
-
-
-
-
-
-
-
-{% embed url="https://www.yuque.com/lpldplws/atomml/xnudhigbps5in504?singleDoc=#password-zglx" %}

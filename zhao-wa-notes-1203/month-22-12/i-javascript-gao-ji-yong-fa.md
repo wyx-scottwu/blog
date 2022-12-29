@@ -6,15 +6,15 @@ description: 1/2
 
 ### I 原型相关
 
-#### I.I protoType
+#### I.I `prototype`
 
-#### **I.II \_\_proto\_\_**
+#### **I.II `__proto__`**
 
-`__proto__` 指向原型对象的prototType
+`__proto__` 指向原型对象的`prototype`
 
 **总结⬆️：**
 
-1. 原型对象的 `protoType` === 示例对象的`__proto__`
+1. 原型对象的 `prototype` === 示例对象的`__proto__`
 2. 实例对象的 `constructor/__proto__.constructor` 指向 原型对象
 
 ### II 作用域相关
@@ -25,6 +25,7 @@ description: 1/2
 
 #### II.III 执行上下文
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```javascript
 // demo
 var foo = function () {
@@ -50,7 +51,9 @@ foo();
 2
 2
 ```
+{% endcode %}
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```javascript
 /**
  *  解释 ⬇️
@@ -77,6 +80,7 @@ foo();
 foo();
 
 ```
+{% endcode %}
 
 #### II.IV 执行上下文栈
 
