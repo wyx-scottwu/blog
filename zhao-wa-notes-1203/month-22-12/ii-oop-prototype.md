@@ -44,8 +44,9 @@ Function.prototype.__bind = function () {
     return calledFn.call(
       // 判断是否 被当作了构造函数
       binder,
+      ...args,
       ...arguments,
-      ...args)
+    )
   }
   return bindFn;
 }
@@ -98,6 +99,21 @@ function operatorNew(_Constructor, ...args) {
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```javascript
+// 改造如下⬇️
+/**
+ * ......
+ * line 2 ～ line 5
+ */ 
+  const bindFn = function () {
+    return calledFn.call(
+      // 判断是否 被当作了构造函数
+      this instanceof bindFn ? this : binder,
+      ...args,
+      ...arguments,
+    )
+  }
+  bindFn.prototype = this.prototype
+  return bindFn;
 ```
 {% endcode %}
 
