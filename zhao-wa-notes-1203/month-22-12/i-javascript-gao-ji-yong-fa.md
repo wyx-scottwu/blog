@@ -4,6 +4,8 @@ description: 1/2
 
 # I JavaScript 高级用法
 
+<figure><img src="https://picx.zhimg.com/80/v2-df56f09828d6ca46e17eeecc619ce88f_720w.webp?source=1940ef5c" alt=""><figcaption></figcaption></figure>
+
 ### I 原型相关
 
 #### I.I `prototype`
