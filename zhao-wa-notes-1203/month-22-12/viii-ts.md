@@ -5,7 +5,9 @@
 ### `TS`基础类型
 
 * `string` `number` `boolean` `array` `undefined` `null`
-* 元组
+*   `Tuple`
+
+    元组中规定的元素类型顺序必须是完全对照的，而且不能多、不能少；
 
 
 
