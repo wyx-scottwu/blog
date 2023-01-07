@@ -18,7 +18,7 @@
     * [TypeScript 详解](zhao-wa-notes-1203/month-22-12/viii-typescript-i/typescript-xiang-jie.md)
   * [IX TypeScript（II）](zhao-wa-notes-1203/month-22-12/ix-typescript-ii.md)
 * [🈷 MONTH 23 01](zhao-wa-notes-1203/month-23-01/README.md)
-  * [Untitled](zhao-wa-notes-1203/month-23-01/untitled.md)
+  * [ES Next](zhao-wa-notes-1203/month-23-01/es-next.md)
 * [SUMMARY](zhao-wa-notes-1203/summary.md)
 
 ## 杂记
@@ -28,3 +28,10 @@
 ## asserts
 
 * [浏览器事件模型&请求 - 课件](https://www.yuque.com/lpldplws/atomml/dh5rlaq0xygdkok5?singleDoc=password-qnyz)
+
+## NOTES
+
+* [👨💻 JavaScript](notes/javascript/README.md)
+  * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
+* [👨💻 TypeScript](notes/typescript/README.md)
+  * [Type & Interface](notes/typescript/type-and-interface.md)
