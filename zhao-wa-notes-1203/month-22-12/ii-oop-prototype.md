@@ -107,11 +107,14 @@ function operatorNew(_Constructor, ...args) {
   const bindFn = function () {
     return calledFn.call(
       // 判断是否 被当作了构造函数
+      // 当作为构造函数执行时，this指向以构造函数为原型创建的对象，所以有如下逻辑⬇️
+      // 1. [this]为[bind]生成函数的实例时，即代表其是通过[new]操作符生成的实例函数，所以[bind]生成的函数需要绑定 [this]作为新的上下文。 对应上方[new]实现第[9]行代码
       this instanceof bindFn ? this : binder,
       ...args,
       ...arguments,
     )
   }
+  // 这一步是为了能够在 new 操作的第一步创建空对象时获取到正确的（构造函数的） prototype
   bindFn.prototype = this.prototype
   return bindFn;
 ```
