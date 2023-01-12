@@ -80,14 +80,14 @@ Function.prototype.__bind = function () {
 
 function operatorNew(_Constructor, ...args) {
   // 以 _Constructor.prototype 为原型创建空对象。
-  const tempRes = Object.create(_Constructor.prototype);
+  const tempObj = Object.create(_Constructor.prototype);
   // 以新创建的空对象作为 this 调用构造函数 _Constructor
-  const constructRes = _Constructor.apply(tempRes, args);
+  const constructRes = _Constructor.apply(tempObj, args);
   // 判断构造函数返回结果是否为对象。  
-  const realRes = typeof constructRes === 'object' 
+  const resObj = typeof constructRes === 'object' 
     ? constructRes
-    : tempRes;
-  return realRes;
+    : tempObj;
+  return resObj;
 }
 ```
 {% endcode %}
