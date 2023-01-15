@@ -22,6 +22,13 @@
   * [II ES 实战](zhao-wa-notes-1203/month-23-01/ii-es-shi-zhan.md)
 * [SUMMARY](zhao-wa-notes-1203/summary.md)
 
+## NOTES
+
+* [👨💻 JavaScript](notes/javascript/README.md)
+  * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
+* [👨💻 TypeScript](notes/typescript/README.md)
+  * [Type & Interface](notes/typescript/type-and-interface.md)
+
 ## 杂记
 
 * [😀 Untitled](za-ji/untitled.md)
@@ -29,10 +36,3 @@
 ## asserts
 
 * [浏览器事件模型&请求 - 课件](https://www.yuque.com/lpldplws/atomml/dh5rlaq0xygdkok5?singleDoc=password-qnyz)
-
-## NOTES
-
-* [👨💻 JavaScript](notes/javascript/README.md)
-  * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
-* [👨💻 TypeScript](notes/typescript/README.md)
-  * [Type & Interface](notes/typescript/type-and-interface.md)
