@@ -35,12 +35,17 @@
   * [Type & Interface](notes/typescript/type-and-interface.md)
 * [🔧 Tools](notes/tools/README.md)
   * [git-cz](notes/tools/git-cz.md)
-* [ℹ Notion](notes/notion/README.md)
-  * [MVC & MVVM](notes/notion/mvc-and-mvvm.md)
+  * [Proxy man](notes/tools/proxy-man.md)
+* [ℹ Concept](notes/concept/README.md)
+  * [MVC & MVVM](notes/concept/mvc-and-mvvm.md)
 
 ## 杂记
 
 * [😀 Untitled](za-ji/untitled.md)
+
+***
+
+* [📖 Vocabulary](vocabulary.md)
 
 ## asserts
 
