@@ -80,14 +80,14 @@ Function.prototype.__bind = function () {
 
 function operatorNew(_Constructor, ...args) {
   // 以 _Constructor.prototype 为原型创建空对象。
-  const tempRes = Object.create(_Constructor.prototype);
+  const tempObj = Object.create(_Constructor.prototype);
   // 以新创建的空对象作为 this 调用构造函数 _Constructor
-  const constructRes = _Constructor.apply(tempRes, args);
+  const constructRes = _Constructor.apply(tempObj, args);
   // 判断构造函数返回结果是否为对象。  
-  const realRes = typeof constructRes === 'object' 
+  const resObj = typeof constructRes === 'object' 
     ? constructRes
-    : tempRes;
-  return realRes;
+    : tempObj;
+  return resObj;
 }
 ```
 {% endcode %}
@@ -133,9 +133,21 @@ function operatorNew(_Constructor, ...args) {
 >
 > **`arguments.callee`**
 >
-> 函数自身
+> * _一个已经弃用的属性_
+> * 通过该方法可以在函数内部获取函数自身
+> * 主要用于解决在匿名函数内部获取函数自身
 
-***
+### 继承实现的方式方法
+
+
+
+
+
+
+
+
+
+
 
 **以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人** [**✉️ 邮箱**](mailto:wyx.scottwu@gmail.com)**。**
 

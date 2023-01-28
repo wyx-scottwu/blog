@@ -20,6 +20,11 @@
 * [🈷 MONTH 23 01](zhao-wa-notes-1203/month-23-01/README.md)
   * [I ES Next](zhao-wa-notes-1203/month-23-01/untitled.md)
   * [II ES 实战](zhao-wa-notes-1203/month-23-01/ii-es-shi-zhan.md)
+  * [III Vue 基础](zhao-wa-notes-1203/month-23-01/iii-vue-ji-chu/README.md)
+    * [Page 1](zhao-wa-notes-1203/month-23-01/iii-vue-ji-chu/page-1.md)
+  * [IV Vue 高级用法](zhao-wa-notes-1203/month-23-01/iv-vue-gao-ji-yong-fa.md)
+  * [V Vue-cli 详解](zhao-wa-notes-1203/month-23-01/v-vuecli-xiang-jie.md)
+  * [VI Vue2源码解析](zhao-wa-notes-1203/month-23-01/vi-vue2-yuan-ma-jie-xi.md)
 * [SUMMARY](zhao-wa-notes-1203/summary.md)
 
 ## NOTES
@@ -28,6 +33,10 @@
   * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
 * [👨💻 TypeScript](notes/typescript/README.md)
   * [Type & Interface](notes/typescript/type-and-interface.md)
+* [🔧 Tools](notes/tools/README.md)
+  * [git-cz](notes/tools/git-cz.md)
+* [ℹ Notion](notes/notion/README.md)
+  * [MVC & MVVM](notes/notion/mvc-and-mvvm.md)
 
 ## 杂记
 
