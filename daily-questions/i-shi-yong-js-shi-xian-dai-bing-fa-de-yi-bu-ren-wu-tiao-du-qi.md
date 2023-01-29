@@ -82,7 +82,9 @@ addTask(200, '4')
 ```
 {% endcode %}
 
+### Summary:
 
+考点在于`promise`运行时机
 
 
 

@@ -40,8 +40,8 @@
 * [🔧 Tools](notes/tools/README.md)
   * [git-cz](notes/tools/git-cz.md)
   * [Proxy man](notes/tools/proxy-man.md)
-* [ℹ 概念](notes/conceptions/README.md)
-  * [MVC & MVVM](notes/conceptions/mvc-and-mvvm.md)
+* [ℹ 概念](notes/concept/README.md)
+  * [MVC & MVVM](notes/concept/mvc-and-mvvm.md)
 
 ## 杂记
 
