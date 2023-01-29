@@ -27,7 +27,7 @@
   * [VI Vue2源码解析](zhao-wa-notes-1203/month-23-01/vi-vue2-yuan-ma-jie-xi.md)
 * [SUMMARY](zhao-wa-notes-1203/summary.md)
 
-## ❔ daily questions
+## daily questions
 
 * [📝 I 使用JS实现带并发的异步任务调度器](daily-questions/i-shi-yong-js-shi-xian-dai-bing-fa-de-yi-bu-ren-wu-tiao-du-qi.md)
 

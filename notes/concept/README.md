@@ -2,5 +2,5 @@
 description: Concept
 ---
 
-# ℹ 概念
+# ℹ Concept
 
