@@ -7,9 +7,9 @@
 * [🈷 MONTH 22 12](zhao-wa-notes-1203/month-22-12/README.md)
   * [I JavaScript 高级用法](zhao-wa-notes-1203/month-22-12/i-javascript-gao-ji-yong-fa.md)
   * [II OOP / protoType](zhao-wa-notes-1203/month-22-12/ii-oop-prototype.md)
-  * [III Promise](zhao-wa-notes-1203/month-22-12/iii-promise/README.md)
-    * [es6-generator](zhao-wa-notes-1203/month-22-12/iii-promise/es6-generator.md)
-  * [IV 模块化开发](zhao-wa-notes-1203/month-22-12/iv-mo-kuai-hua-kai-fa.md)
+  * [III Promise](zhao-wa-notes-1203/month-22-12/iii-promise.md)
+    * [es6-generator](zhao-wa-notes-1203/month-22-12/iv-mo-kuai-hua-kai-fa/es6-generator.md)
+  * [IV 模块化开发](zhao-wa-notes-1203/month-22-12/iv-mo-kuai-hua-kai-fa/README.md)
   * [V 浏览器事件模型&请求](zhao-wa-notes-1203/month-22-12/v-liu-lan-qi-shi-jian-mo-xing-qing-qiu.md)
   * [VI.I JavaScript 垃圾回收与内存泄漏](zhao-wa-notes-1203/month-22-12/vi.i-javascript-la-ji-hui-shou-yu-nei-cun-xie-lou.md)
   * [VI.II JavaScript 运行机制](zhao-wa-notes-1203/month-22-12/vi.ii-javascript-yun-hang-ji-zhi.md)
@@ -27,6 +27,10 @@
   * [VI Vue2源码解析](zhao-wa-notes-1203/month-23-01/vi-vue2-yuan-ma-jie-xi.md)
 * [SUMMARY](zhao-wa-notes-1203/summary.md)
 
+## ❔ daily questions
+
+* [📝 I 使用JS实现带并发的异步任务调度器](daily-questions/i-shi-yong-js-shi-xian-dai-bing-fa-de-yi-bu-ren-wu-tiao-du-qi.md)
+
 ## NOTES
 
 * [👨💻 JavaScript](notes/javascript/README.md)
@@ -36,8 +40,8 @@
 * [🔧 Tools](notes/tools/README.md)
   * [git-cz](notes/tools/git-cz.md)
   * [Proxy man](notes/tools/proxy-man.md)
-* [ℹ Concept](notes/concept/README.md)
-  * [MVC & MVVM](notes/concept/mvc-and-mvvm.md)
+* [ℹ 概念](notes/conceptions/README.md)
+  * [MVC & MVVM](notes/conceptions/mvc-and-mvvm.md)
 
 ## 杂记
 
