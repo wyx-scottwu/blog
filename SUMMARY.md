@@ -30,6 +30,7 @@
 ## daily questions
 
 * [📝 I 使用JS实现带并发的异步任务调度器](daily-questions/i-shi-yong-js-shi-xian-dai-bing-fa-de-yi-bu-ren-wu-tiao-du-qi.md)
+* [📝 II N数之和](daily-questions/iinshu-zhi-he.md)
 
 ## NOTES
 
