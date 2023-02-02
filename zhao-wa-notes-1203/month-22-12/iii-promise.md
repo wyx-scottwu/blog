@@ -192,10 +192,150 @@ catch(onRejected) {
 
 #### `all`
 
+1. 接收一个可迭代对象；
+2. 所有`Promise`成功才成功；
+3. 第一个错误出现后直接`reject`；
+
 {% code title="" overflow="wrap" lineNumbers="true" %}
 ```javascript
+all(promises) {
+    const tempResults = [];
+    let counts = 0;
+    let prevIndex = 0;
+    return new _Promise((resolve, reject) => {
+        try {
+             const addData = (res, index) => {
+                tempResults[index] = res;
+                if(++counts === promises.length) {
+                    resolve(tempResults);
+                }
+            }
+            // 用 for···of 原生来判断是否是可迭代对象
+            for(let promise of promises) {
+                const index = prevIndex++;
+                if(promise instanceof _Promise) {
+                    promise
+                        .then(res=>addData(res, index))
+                        .catch(reject);
+                } else {
+                    addData(promise, index);
+                }
+            }
+        } catch (err) {
+            reject(err)
+        }
+    })
+}
 ```
 {% endcode %}
+
+#### `race`
+
+1. 同样接收可迭代对象；
+2. 任意一个成功即返回成功；
+3. 任意一个失败即返回失败；
+
+{% code title="" overflow="wrap" lineNumbers="true" %}
+```javascript
+race(promise) {
+    let prevIndex = 0;
+    return new _Promise((resolve, reject) => {
+        try {
+            // 用 for···of 原生来判断是否是可迭代对象
+            for(let promise of promises) {
+                const index = prevIndex++;
+                if(promise instanceof _Promise) {
+                    promise.then(resolve, reject)
+                } else {
+                    resolve(promise);
+                }
+            }
+        } catch (err) {
+            reject(err);
+        }
+    })
+}
+```
+{% endcode %}
+
+#### `allSettled`
+
+1. 接收可迭代对象；
+2. 不论失败/成功，直到所有`promise`执行完后再返回结果数组；
+3. 返回的数组`status`存储`promise`执行状态，`value`存储成功结果，`reason`存储失败原因；
+4. 不论是否全部成功/失败，返回的Promise状态都是`fulfilled`；
+
+{% code title="" overflow="wrap" lineNumbers="true" %}
+```javascript
+allSettled(promises) {
+    const tempResults = [];
+    this.counts = 0;
+    this.prevIndex = 0;
+    
+    return new _Promise((resolve, reject) => {
+        const addData = (res, index) => {
+            tempResults[index] = res;
+            if(++counts === promises.length) {
+                resolve(tempResults);
+            }
+        }
+        for(let promise of promises) {
+            const index = prevIndex++;
+            if(promise instanceof _Promise) {
+                promise
+                    .then(value => addData({
+                        status: 'fulfilled',
+                        value
+                    },index))
+                    .catch(reason => addData({
+                        status: 'rejected',
+                        reason
+                    }))
+            } else {
+                addData({
+                    status: 'fulfilled',
+                    value: promise
+                },index)
+            }
+        }
+    })    
+}
+```
+{% endcode %}
+
+#### `any`
+
+1. 接收可迭代对象；
+2. 任意一个成功即为成功；
+3. 全部失败则为失败；
+
+{% code title="" overflow="wrap" lineNumbers="true" %}
+```javascript
+any(promises) {
+    const errors = [];
+    let prevIndex = 0;
+    return new _Promise((resolve, reject) => {
+        for (let promise of promises) {
+            const index = prevIndex++;
+            if(promise instanceof _Promise) {
+                promise
+                    .then(resolve)
+                    .catch((err) => {
+                        errors[index] = err;
+                        if(prevIndex === promises.length) {
+                        reject(new AggregateError(errors, 'All promises were rejected'))
+                        }
+                    })
+            } else {
+                resolve(promise);
+            }
+        } 
+    })
+}
+```
+{% endcode %}
+
+
 
 
 
