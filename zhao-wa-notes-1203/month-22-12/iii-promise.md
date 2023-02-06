@@ -335,6 +335,41 @@ any(promises) {
 ```
 {% endcode %}
 
+### `Async/Await`
+
+是`generator`的语法糖。
+
+#### 利用 `generator/yield`表达式实现`async/await`
+
+_思路：_
+
+1. 利用`HOC`对`generator`函数进行封装处理；
+2. 自动执行传入的`generator`函数；
+3. 返回`Promise`结果；
+
+{% code title="" overflow="wrap" lineNumbers="true" %}
+```javascript
+function generator2Async(generator) {
+    return function() {
+        // 绑定this 只为纠正this指向，在不考虑使用this时，不绑定this也可以。
+        const gen = generator.apply(this, arguments);
+        return new Promise((resolve, reject) => {
+            try {
+                const autoRun = () => {
+                    
+                }
+                
+            } catch (err) {
+                reject(err);
+            }
+        })
+    }
+}
+```
+{% endcode %}
+
+
+
 
 
 

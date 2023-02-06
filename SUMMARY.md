@@ -43,6 +43,7 @@
   * [Proxy man](notes/tools/proxy-man.md)
 * [ℹ 概念](notes/concept/README.md)
   * [MVC & MVVM](notes/concept/mvc-and-mvvm.md)
+  * [泛域名解析](notes/conceptions/fan-yu-ming-jie-xi.md)
 
 ## 杂记
 
