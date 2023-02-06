@@ -355,10 +355,26 @@ function generator2Async(generator) {
         const gen = generator.apply(this, arguments);
         return new Promise((resolve, reject) => {
             try {
-                const autoRun = () => {
-                    
+                const autoRun = (key, args) => {
+                    let res;
+                    try {
+                        res = gen[key](args);
+                    } catch(err) {
+                        return reject(err)
+                    }
+                    const { done, value } = res;
+                    if(done) {
+                        resolve(value);
+                    } else {
+                        return Promise
+                            .resolve(value)
+                            // 继续向下next
+                            .then(res => autoRun('next', value))
+                            // 调用generator内部throw方法
+                            .catch(err => autoRun('throw', err));
+                    }
                 }
-                
+                autoRun('next');
             } catch (err) {
                 reject(err);
             }
