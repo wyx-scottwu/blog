@@ -17,6 +17,7 @@
   * [VIII TypeScript（I）](zhao-wa-notes-1203/month-22-12/viii-ts.md)
     * [TypeScript 详解](zhao-wa-notes-1203/month-22-12/viii-typescript-i/typescript-xiang-jie.md)
   * [IX TypeScript（II）](zhao-wa-notes-1203/month-22-12/ix-typescript-ii.md)
+  * [Page 3](zhao-wa-notes-1203/month-22-12/page-3.md)
 * [📅 MONTH 23 01](zhao-wa-notes-1203/month-23-01/README.md)
   * [I ES Next](zhao-wa-notes-1203/month-23-01/untitled.md)
   * [II ES 实战](zhao-wa-notes-1203/month-23-01/ii-es-shi-zhan.md)
@@ -26,7 +27,7 @@
   * [V Vue-cli 详解](zhao-wa-notes-1203/month-23-01/v-vuecli-xiang-jie.md)
   * [VI Vue2源码解析](zhao-wa-notes-1203/month-23-01/vi-vue2-yuan-ma-jie-xi.md)
 * [📅 MONTH 23 02](zhao-wa-notes-1203/month-23-02/README.md)
-  * [Page 2](zhao-wa-notes-1203/month-23-02/page-2.md)
+  * [React 基础](zhao-wa-notes-1203/month-23-02/react-ji-chu.md)
 * [SUMMARY](zhao-wa-notes-1203/summary.md)
 
 ## daily questions
