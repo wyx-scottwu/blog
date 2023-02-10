@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🇨🇳 欢迎光临 👋](README.md)
+* [🇨🇳 🇨🇳 欢迎光临 👋](README.md)
 
 ## 爪哇\_notes/1203 <a href="#zhao-wa-notes-1203" id="zhao-wa-notes-1203"></a>
 
@@ -36,9 +36,9 @@
 
 ## NOTES
 
-* [👨💻 JavaScript](notes/javascript/README.md)
+* [👨💻 👨💻 JavaScript](notes/javascript/README.md)
   * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
-* [👨💻 TypeScript](notes/typescript/README.md)
+* [👨💻 👨💻 TypeScript](notes/typescript/README.md)
   * [Type & Interface](notes/typescript/type-and-interface.md)
 * [🔧 Tools](notes/tools/README.md)
   * [git-cz](notes/tools/git-cz.md)
