@@ -1,0 +1,8 @@
+# react-native-svg
+
+### `ClipPath`
+
+
+
+
+

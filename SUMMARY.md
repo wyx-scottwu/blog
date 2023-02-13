@@ -36,10 +36,12 @@
 
 ## NOTES
 
-* [👨💻 👨💻 JavaScript](notes/javascript/README.md)
+* [👨💻 JavaScript](notes/javascript/README.md)
   * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
-* [👨💻 👨💻 TypeScript](notes/typescript/README.md)
+* [👨💻 TypeScript](notes/typescript/README.md)
   * [Type & Interface](notes/typescript/type-and-interface.md)
+* [👨💻 React Native](notes/react-native/README.md)
+  * [react-native-svg](notes/react-native/react-native-svg.md)
 * [🔧 Tools](notes/tools/README.md)
   * [git-cz](notes/tools/git-cz.md)
   * [Proxy man](notes/tools/proxy-man.md)
