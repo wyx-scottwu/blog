@@ -41,6 +41,8 @@
 * [👨💻 TypeScript](notes/typescript/README.md)
   * [Type & Interface](notes/typescript/type-and-interface.md)
 * [👨💻 React](notes/react/README.md)
+  * [🔗 react](notes/react/react/README.md)
+    * [XSS](notes/react/react/xss.md)
   * [🔗 react-native](notes/react/react-native/README.md)
     * [react-native-svg](notes/react/react-native/react-native-svg.md)
 * [💻 Git](notes/git/README.md)
