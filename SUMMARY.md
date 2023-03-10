@@ -66,5 +66,4 @@
 
 ## asserts
 
-* [浏览器事件模型&请求 - 课件](https://www.yuque.com/lpldplws/atomml/dh5rlaq0xygdkok5?singleDoc=password-qnyz)
-* [GHAT](https://ghat.scottwu.cn)
+* [Untitled](asserts/untitled.md)
