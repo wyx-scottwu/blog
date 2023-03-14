@@ -45,6 +45,8 @@
 * [👨💻 React](notes/react/README.md)
   * [🔗 react](notes/react/react/README.md)
     * [XSS](notes/react/react/xss.md)
+    * [Hooks](notes/react/react/hooks.md)
+    * [useMemo](notes/react/react/usememo.md)
   * [🔗 react-native](notes/react/react-native/README.md)
     * [react-native-svg](notes/react/react-native/react-native-svg.md)
 * [💻 Git](notes/git/README.md)
