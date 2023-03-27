@@ -63,7 +63,7 @@
 ## 杂记
 
 * [😀 Untitled](za-ji/untitled.md)
-* [记录一次Mac前端环境配置](za-ji/ji-lu-yi-ci-mac-qian-duan-huan-jing-pei-zhi.md)
+* [💻 记录一次Mac前端环境配置](za-ji/ji-lu-yi-ci-mac-qian-duan-huan-jing-pei-zhi.md)
 
 ***
 
