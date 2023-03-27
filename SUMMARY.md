@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🇨🇳 🇨🇳 欢迎光临 👋](README.md)
+* [🇨🇳 欢迎光临 👋](README.md)
 
 ## notes/1203
 
@@ -63,6 +63,7 @@
 ## 杂记
 
 * [😀 Untitled](za-ji/untitled.md)
+* [记录一次Mac前端环境配置](za-ji/ji-lu-yi-ci-mac-qian-duan-huan-jing-pei-zhi.md)
 
 ***
 
