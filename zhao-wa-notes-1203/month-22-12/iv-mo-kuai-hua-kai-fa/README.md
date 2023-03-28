@@ -65,8 +65,8 @@ require(['dependencies1'], function(dependencies1) {
 
 
 
-> **``**[**`ESM 是值的引用` ** ](../../../notes/concept/esm-yu-commonjs-de-qu-bie.md)
+> **``**[**`ESM 是值的引用`**](../../../notes/concept/esm-yu-commonjs-de-qu-bie.md) ****&#x20;
 >
-> [**`CommonJS 是值的拷贝` ** ](../../../notes/concept/esm-yu-commonjs-de-qu-bie.md)
+> **``**[**`CommonJS 是值的拷贝` ** ](../../../notes/concept/esm-yu-commonjs-de-qu-bie.md)****
 
 {% file src="../../../.gitbook/assets/DAY_04前端模块化.pdf" %}
