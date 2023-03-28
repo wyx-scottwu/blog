@@ -56,6 +56,7 @@
   * [git-cz](notes/tools/git-cz.md)
   * [Proxy man](notes/tools/proxy-man.md)
 * [ℹ 概念](notes/concept/README.md)
+  * [ESM与CommonJS的区别](notes/concept/esm-yu-commonjs-de-qu-bie.md)
   * [MVC & MVVM](notes/concept/mvc-and-mvvm.md)
   * [泛域名解析](notes/conceptions/fan-yu-ming-jie-xi.md)
   * [浏览器的工作原理](notes/concept/liu-lan-qi-de-gong-zuo-yuan-li.md)
