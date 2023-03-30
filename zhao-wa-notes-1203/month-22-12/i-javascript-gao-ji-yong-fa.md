@@ -1,5 +1,6 @@
 ---
 description: 1/2
+coverY: 0
 ---
 
 # I JavaScript 高级用法
