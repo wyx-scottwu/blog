@@ -58,6 +58,8 @@
 * [🔧 Tools](notes/tools/README.md)
   * [git-cz](notes/tools/git-cz.md)
   * [Proxy man](notes/tools/proxy-man.md)
+* [Vite](notes/vite/README.md)
+  * [mock](notes/vite/mock.md)
 * [ℹ 概念](notes/concept/README.md)
   * [内网穿透](notes/concept/nei-wang-chuan-tou.md)
   * [ESM与CommonJS的区别](notes/concept/esm-yu-commonjs-de-qu-bie.md)
