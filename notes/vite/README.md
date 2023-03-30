@@ -2,5 +2,5 @@
 description: Vite
 ---
 
-# Vite
+# ⚡ Vite
 
