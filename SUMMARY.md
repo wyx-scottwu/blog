@@ -40,6 +40,7 @@
 * [👨💻 JavaScript](notes/javascript/README.md)
   * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
   * [JavaScript表达式](notes/javascript/javascript-biao-da-shi.md)
+  * [浏览器兼容](notes/javascript/liu-lan-qi-jian-rong.md)
 * [👨💻 TypeScript](notes/typescript/README.md)
   * [Type & Interface](notes/typescript/type-and-interface.md)
 * [👨💻 React](notes/react/README.md)
@@ -50,6 +51,8 @@
   * [🔗 react-native](notes/react/react-native/README.md)
     * [react-native-svg](notes/react/react-native/react-native-svg.md)
     * [Flatlist与ScrollView的区别](notes/react/react-native/difference-between-flatlist-and-scrollview.md)
+* [🌈 CSS](notes/css/README.md)
+  * [浏览器兼容](notes/css/liu-lan-qi-jian-rong.md)
 * [💻 Git](notes/git/README.md)
   * [commit](notes/git/commit.md)
 * [🔧 Tools](notes/tools/README.md)
@@ -61,6 +64,7 @@
   * [MVC & MVVM](notes/concept/mvc-and-mvvm.md)
   * [泛域名解析](notes/conceptions/fan-yu-ming-jie-xi.md)
   * [浏览器的工作原理](notes/concept/liu-lan-qi-de-gong-zuo-yuan-li.md)
+  * [事件循环](notes/concept/shi-jian-xun-huan.md)
 
 ## 杂记
 
@@ -74,7 +78,3 @@
 ## code-blocks
 
 * [untitled](code-blocks/untitled.md)
-
-## Group 1
-
-* [Page 1](group-1/page-1.md)
