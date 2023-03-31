@@ -34,6 +34,7 @@
   * [泛域名解析](notes/conceptions/fan-yu-ming-jie-xi.md)
   * [浏览器的工作原理](notes/concept/liu-lan-qi-de-gong-zuo-yuan-li.md)
   * [事件循环](notes/concept/shi-jian-xun-huan.md)
+  * [钩子函数](notes/concept/gou-zi-han-shu.md)
 
 ## daily questions
 
