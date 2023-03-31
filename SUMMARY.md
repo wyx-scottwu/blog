@@ -22,7 +22,7 @@
   * [浏览器兼容](notes/css/liu-lan-qi-jian-rong.md)
 * [💻 Git](notes/git/README.md)
   * [commit](notes/git/commit.md)
-* [🔧 Tools](notes/tools/README.md)
+* [🛠 Tools](notes/tools/README.md)
   * [git-cz](notes/tools/git-cz.md)
   * [Proxy man](notes/tools/proxy-man.md)
 * [⚡ Vite](notes/vite/README.md)
@@ -45,7 +45,7 @@
 
 * [😀 Untitled](za-ji/untitled.md)
 * [💻 记录一次Mac前端环境配置](za-ji/ji-lu-yi-ci-mac-qian-duan-huan-jing-pei-zhi.md)
-* [📖 Vocabulary](za-ji/vocabulary.md)
+* [📖 Vocabulary](vocabulary.md)
 
 ## code-blocks
 
