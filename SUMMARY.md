@@ -41,6 +41,16 @@
 * [📝 I 使用JS实现带并发的异步任务调度器](daily-questions/i-shi-yong-js-shi-xian-dai-bing-fa-de-yi-bu-ren-wu-tiao-du-qi.md)
 * [📝 II N数之和](daily-questions/iinshu-zhi-he.md)
 
+## 杂记
+
+* [😀 Untitled](za-ji/untitled.md)
+* [💻 记录一次Mac前端环境配置](za-ji/ji-lu-yi-ci-mac-qian-duan-huan-jing-pei-zhi.md)
+* [📖 Vocabulary](za-ji/vocabulary.md)
+
+## code-blocks
+
+* [❔ Untitled](code-blocks/untitled.md)
+
 ## notes/1203
 
 * [📅 MONTH 22 12](zhao-wa-notes-1203/month-22-12/README.md)
@@ -68,16 +78,3 @@
   * [React 高级用法](zhao-wa-notes-1203/month-23-02/react-gao-ji-yong-fa.md)
   * [React Router](notes-1203/month-23-02/react-router.md)
 * [SUMMARY](zhao-wa-notes-1203/summary.md)
-
-## 杂记
-
-* [😀 Untitled](za-ji/untitled.md)
-* [💻 记录一次Mac前端环境配置](za-ji/ji-lu-yi-ci-mac-qian-duan-huan-jing-pei-zhi.md)
-
-***
-
-* [📖 Vocabulary](vocabulary.md)
-
-## code-blocks
-
-* [untitled](code-blocks/untitled.md)
