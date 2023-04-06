@@ -6,7 +6,7 @@ description: Vue
 
 ### `vuex` 与 `mixin`的区别
 
-> ``[`vuex`](https://vuex.vuejs.org/zh/guide/)vue`状态管理工具`
+> [`vuex`](https://vuex.vuejs.org/zh/guide/)vue`状态管理工具`
 >
 > `mixin` 一个用以服用状态以及逻辑的`api`
 

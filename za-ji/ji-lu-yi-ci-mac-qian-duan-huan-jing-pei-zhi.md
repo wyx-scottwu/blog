@@ -14,7 +14,7 @@ xcode-select --install
 {% endcode %}
 
 * 安装[`oh-my-zsh`](https://ohmyz.sh/#install) `// 推荐安装`&#x20;
-* 安装包管理工具[`homebrew`](https://brew.sh/)``
+* 安装包管理工具[`homebrew`](https://brew.sh/)
 * 安装`nvm`
 
 {% code overflow="wrap" lineNumbers="true" %}

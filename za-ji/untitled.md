@@ -26,7 +26,7 @@
 
 **Q:** 服务端渲染使用定时器会导致内存泄漏？
 
-**A: `setTimeout`  `setInterval`**定时器不会自动清楚，使用完后需要手动清除，否则会一直占用内存导致内存泄漏。
+**A: `setTimeout`** **`setInterval`**定时器不会自动清楚，使用完后需要手动清除，否则会一直占用内存导致内存泄漏。
 
 
 
@@ -36,4 +36,3 @@
 
 {% embed url="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString" %}
 
-****

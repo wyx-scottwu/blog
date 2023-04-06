@@ -4,7 +4,7 @@
 >
 > 【[掘金](https://juejin.cn/)｜[去追光](https://juejin.cn/user/4054654615555854)｜[浏览器的兼容问题及解决方案整理（建议收藏）](https://juejin.cn/post/6972937716660961317)】
 
-**1、`CSS Hack` **&#x20;
+**1、`CSS Hack`**&#x20;
 
 使用 `hacker` 可以把浏览器分为3类：IE6；IE7和遨游；其他（IE8 Chrome ff Safari opera等）\
 （1）IE6认识的 `hacker` 是 下划线 `_`  和星号 `*` \
@@ -128,7 +128,7 @@ IE7、FF 共用： `height: 100px !important;` \
 解决方案：给超出高度的标签设置 `overflow:hidden;` 或者设置行高 `line-height`  小于你设置的高度。\
 备注：这种情况一般出现在我们设置小圆角背景的标签里。出现这个问题的原因是IE8之前的浏览器都会给标签一个最小默认的行高的高度。即使你的标签是空的，这个标签的高度还是会达到默认的行高。
 
-**4、行内属性标签，设置 `display:block` 后采用 `float` 布局，又有横行的 `margin` 的情况，IE6间距 `bug` **&#x20;
+**4、行内属性标签，设置 `display:block` 后采用 `float` 布局，又有横行的 `margin` 的情况，IE6间距 `bug`**&#x20;
 
 问题说明：IE6里的间距比超过设置的间距\
 解决方案：在 `display:block;` 后面加入 `display:inline;display:table;` \
@@ -249,7 +249,7 @@ html>body #box {
 }
 ```
 
-**12、 `DIV` 浮动IE文本产生 `3px` 的 `bug` **&#x20;
+**12、 `DIV` 浮动IE文本产生 `3px` 的 `bug`**&#x20;
 
 左边对象浮动，右边采用外补丁的左边距来定位，右边对象内的文本会离左边有 `3px` 的间距。
 

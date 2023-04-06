@@ -1,8 +1,8 @@
 # III Vue 基础
 
-### ``[`mvc`](../../notes/concept/mvc-and-mvvm.md#mvc)&#x20;
+### [`mvc`](../../notes/concept/mvc-and-mvvm.md#mvc)&#x20;
 
-### ``[`mvvm`](../../notes/concept/mvc-and-mvvm.md#mvvm)``
+### [`mvvm`](../../notes/concept/mvc-and-mvvm.md#mvvm)
 
 
 
@@ -25,5 +25,7 @@
 #### 模版语法
 
 `{{  }}`内可以填充任意[`JavaScript`表达式](../../notes/javascript/javascript-biao-da-shi.md)
+
+
 
 {% file src="../../.gitbook/assets/Vue基础.pdf" %}

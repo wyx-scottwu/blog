@@ -6,5 +6,5 @@
 
 
 
-### ``[`XSS`](../../notes/react/react/xss.md)``
+### [`XSS`](../../notes/react/react/xss.md)
 
