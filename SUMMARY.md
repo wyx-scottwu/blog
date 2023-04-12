@@ -46,7 +46,9 @@
   * [泛域名解析](notes/conceptions/fan-yu-ming-jie-xi.md)
   * [浏览器的工作原理](notes/concept/liu-lan-qi-de-gong-zuo-yuan-li.md)
   * [钩子函数](notes/concept/gou-zi-han-shu.md)
-  * [函数柯里化（Currying）](notes/concept/han-shu-ke-li-hua-currying.md)
+  * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
+* [📝 TODO](notes/todo/README.md)
+  * [VS Code插件](notes/todo/vs-code-cha-jian.md)
 
 ## daily questions
 
