@@ -5,7 +5,6 @@
 ## NOTES
 
 * [👨💻 JavaScript](notes/javascript/README.md)
-  * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
   * [JavaScript表达式](notes/javascript/javascript-biao-da-shi.md)
   * [浏览器兼容](notes/javascript/liu-lan-qi-jian-rong.md)
 * [👨💻 TypeScript](notes/typescript/README.md)
@@ -41,11 +40,13 @@
   * [Usage](notes/zheng-ze/usage.md)
 * [ℹ 概念](notes/concept/README.md)
   * [内网穿透](notes/concept/nei-wang-chuan-tou.md)
+  * [并行 并发 串行](notes/concept/bing-hang-bing-fa-chuan-hang.md)
   * [ESM与CommonJS的区别](notes/concept/esm-yu-commonjs-de-qu-bie.md)
   * [MVC & MVVM](notes/concept/mvc-and-mvvm.md)
   * [泛域名解析](notes/conceptions/fan-yu-ming-jie-xi.md)
   * [浏览器的工作原理](notes/concept/liu-lan-qi-de-gong-zuo-yuan-li.md)
   * [钩子函数](notes/concept/gou-zi-han-shu.md)
+  * [函数柯里化（Currying）](notes/concept/han-shu-ke-li-hua-currying.md)
 
 ## daily questions
 
@@ -88,4 +89,7 @@
   * [React 基础](zhao-wa-notes-1203/month-23-02/page-2.md)
   * [React 高级用法](zhao-wa-notes-1203/month-23-02/react-gao-ji-yong-fa.md)
   * [React Router](notes-1203/month-23-02/react-router.md)
+* [📅 MONTH 23 03](notes-1203/month-23-03.md)
+* [📅 MONTH 23 04](notes-1203/month-23-04/README.md)
+  * [Node 框架详解](notes-1203/month-23-04/node-kuang-jia-xiang-jie.md)
 * [SUMMARY](zhao-wa-notes-1203/summary.md)

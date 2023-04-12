@@ -4,7 +4,20 @@
 
 ### [`mvvm`](../../notes/concept/mvc-and-mvvm.md#mvvm)
 
+### 生命周期
 
+
+
+| 生命周期            | 描述 |   |
+| --------------- | -- | - |
+| `beforeCreate`  |    |   |
+| `created`       |    |   |
+| `beforeMount`   |    |   |
+| `mounted`       |    |   |
+| `beforeUpdate`  |    |   |
+| `updated`       |    |   |
+| `beforeDestroy` |    |   |
+| `destroyed`     |    |   |
 
 ### 其他
 
