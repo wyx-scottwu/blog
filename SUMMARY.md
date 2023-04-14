@@ -48,7 +48,8 @@
   * [钩子函数](notes/concept/gou-zi-han-shu.md)
   * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
 * [📝 TODO](notes/todo/README.md)
-  * [VS Code插件](notes/todo/vs-code-cha-jian.md)
+  * [🎮 Game](notes/todo/game.md)
+  * [🧩 VS Code插件](notes/todo/vs-code-cha-jian.md)
 
 ## daily questions
 
