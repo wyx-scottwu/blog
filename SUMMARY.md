@@ -5,6 +5,7 @@
 ## NOTES
 
 * [👨💻 JavaScript](notes/javascript/README.md)
+  * [getBoundingClientRect](notes/javascript/getboundingclientrect.md)
   * [JavaScript表达式](notes/javascript/javascript-biao-da-shi.md)
   * [浏览器兼容](notes/javascript/liu-lan-qi-jian-rong.md)
 * [👨💻 TypeScript](notes/typescript/README.md)
