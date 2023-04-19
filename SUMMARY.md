@@ -22,6 +22,7 @@
   * [基本原理](notes/vue/ji-ben-yuan-li.md)
   * [Version II](notes/vue/version-ii.md)
   * [Version III](notes/vue/version-iii.md)
+  * [Slot 传值](notes/vue/slot-chuan-zhi.md)
 * [🏗 Node](notes/node/README.md)
   * [Event loop](notes/node/event-loop.md)
   * [Commander](notes/node/commander/README.md)
