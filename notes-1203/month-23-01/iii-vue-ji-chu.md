@@ -8,16 +8,7 @@
 
 
 
-| 生命周期            | 描述 |   |
-| --------------- | -- | - |
-| `beforeCreate`  |    |   |
-| `created`       |    |   |
-| `beforeMount`   |    |   |
-| `mounted`       |    |   |
-| `beforeUpdate`  |    |   |
-| `updated`       |    |   |
-| `beforeDestroy` |    |   |
-| `destroyed`     |    |   |
+<table><thead><tr><th width="187">生命周期</th><th>描述</th><th></th></tr></thead><tbody><tr><td><code>beforeCreate</code></td><td></td><td></td></tr><tr><td><code>created</code></td><td></td><td></td></tr><tr><td><code>beforeMount</code></td><td></td><td></td></tr><tr><td><code>mounted</code></td><td></td><td></td></tr><tr><td><code>beforeUpdate</code></td><td></td><td></td></tr><tr><td><code>updated</code></td><td></td><td></td></tr><tr><td><code>beforeDestroy</code></td><td></td><td></td></tr><tr><td><code>destroyed</code></td><td></td><td></td></tr></tbody></table>
 
 ### 其他
 

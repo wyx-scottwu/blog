@@ -35,6 +35,8 @@
   * [Cookies](notes/http/cookies.md)
 * [🌈 CSS](notes/css/README.md)
   * [浏览器兼容](notes/css/liu-lan-qi-jian-rong.md)
+* [📦 PNpm](notes/pnpm/README.md)
+  * [💾 Commands](notes/pnpm/commands.md)
 * [💻 Git](notes/git/README.md)
   * [commit](notes/git/commit.md)
 * [⚡ Vite](notes/vite/README.md)
@@ -56,10 +58,9 @@
   * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
   * [AST](notes/concept/ast.md)
 * [📝 TODO](notes/todo/README.md)
+  * [🗓 Fake Commits](notes/todo/fake-commits.md)
   * [🎮 Game](notes/todo/game.md)
   * [🧩 VS Code插件](notes/todo/vs-code-cha-jian.md)
-* [PNpm](notes/pnpm/README.md)
-  * [Page 2](notes/pnpm/page-2.md)
 
 ## daily questions
 
