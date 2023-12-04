@@ -51,12 +51,15 @@
   * [MVC & MVVM](notes/concept/mvc-and-mvvm.md)
   * [泛域名解析](notes/conceptions/fan-yu-ming-jie-xi.md)
   * [浏览器的工作原理](notes/concept/liu-lan-qi-de-gong-zuo-yuan-li.md)
+  * [事件循环](notes/concept/shi-jian-xun-huan.md)
   * [钩子函数](notes/concept/gou-zi-han-shu.md)
   * [函数柯里化（Currying）](notes/javascript/han-shu-ke-li-hua-currying.md)
   * [AST](notes/concept/ast.md)
 * [📝 TODO](notes/todo/README.md)
   * [🎮 Game](notes/todo/game.md)
   * [🧩 VS Code插件](notes/todo/vs-code-cha-jian.md)
+* [PNpm](notes/pnpm/README.md)
+  * [Page 2](notes/pnpm/page-2.md)
 
 ## daily questions
 
