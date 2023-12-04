@@ -42,7 +42,7 @@
 * [🛠 Tools](notes/tools/README.md)
   * [git-cz](notes/tools/git-cz.md)
   * [Proxy man](notes/tools/proxy-man.md)
-* [🔁 正则](notes/zheng-ze/README.md)
+* [® 正则](notes/zheng-ze/README.md)
   * [Usage](notes/zheng-ze/usage.md)
 * [ℹ 概念](notes/concept/README.md)
   * [内网穿透](notes/concept/nei-wang-chuan-tou.md)
