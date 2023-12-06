@@ -36,6 +36,7 @@
 * [🌈 CSS](notes/css/README.md)
   * [浏览器兼容](notes/css/liu-lan-qi-jian-rong.md)
 * [📦 PNpm](notes/pnpm/README.md)
+  * [⚙ Configure](notes/pnpm/configure.md)
   * [💾 Commands](notes/pnpm/commands.md)
 * [💻 Git](notes/git/README.md)
   * [commit](notes/git/commit.md)
@@ -63,6 +64,9 @@
   * [🗓 Fake Commits](notes/todo/fake-commits.md)
   * [🎮 Game](notes/todo/game.md)
   * [🧩 VS Code插件](notes/todo/vs-code-cha-jian.md)
+* [🚨 规范](notes/gui-fan/README.md)
+  * [ESLint](notes/gui-fan/eslint.md)
+  * [Prettier](notes/gui-fan/prettier.md)
 
 ## daily questions
 
@@ -74,6 +78,7 @@
 * [😀 Untitled](za-ji/untitled.md)
 * [💻 记录一次Mac前端环境配置](za-ji/ji-lu-yi-ci-mac-qian-duan-huan-jing-pei-zhi.md)
 * [📖 Vocabulary](vocabulary.md)
+* [Page](za-ji/page.md)
 
 ## code-blocks
 
