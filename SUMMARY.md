@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🇨🇳 欢迎光临 👋](README.md)
+* [™ 欢迎光临 👋](README.md)
 
 ## NOTES
 
@@ -35,9 +35,11 @@
   * [Cookies](notes/http/cookies.md)
 * [🌈 CSS](notes/css/README.md)
   * [浏览器兼容](notes/css/liu-lan-qi-jian-rong.md)
-* [📦 PNpm](notes/pnpm/README.md)
-  * [⚙ Configure](notes/pnpm/configure.md)
-  * [💾 Commands](notes/pnpm/commands.md)
+* [📦 Npm](notes/npm/README.md)
+  * [📦 http-server](notes/npm/http-server.md)
+  * [PNpm](notes/npm/pnpm/README.md)
+    * [⚙ Configure](notes/npm/pnpm/configure.md)
+    * [💾 Commands](notes/npm/pnpm/commands.md)
 * [💻 Git](notes/git/README.md)
   * [commit](notes/git/commit.md)
 * [⚡ Vite](notes/vite/README.md)
@@ -45,6 +47,8 @@
 * [🛠 Tools](notes/tools/README.md)
   * [git-cz](notes/tools/git-cz.md)
   * [Proxy man](notes/tools/proxy-man.md)
+  * [VS Code](notes/tools/vs-code/README.md)
+    * [Page 1](notes/tools/vs-code/page-1.md)
 * [® 正则](notes/zheng-ze/README.md)
   * [Usage](notes/zheng-ze/usage.md)
 * [ℹ 概念](notes/concept/README.md)
