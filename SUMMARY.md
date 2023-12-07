@@ -40,7 +40,7 @@
   * [PNpm](notes/npm/pnpm/README.md)
     * [⚙ Configure](notes/npm/pnpm/configure.md)
     * [💾 Commands](notes/npm/pnpm/commands.md)
-* [💻 Git](notes/git/README.md)
+* [🔀 Git](notes/git/README.md)
   * [commit](notes/git/commit.md)
 * [⚡ Vite](notes/vite/README.md)
   * [mock](notes/vite/mock.md)
@@ -82,7 +82,8 @@
 * [😀 Untitled](za-ji/untitled.md)
 * [💻 记录一次Mac前端环境配置](za-ji/ji-lu-yi-ci-mac-qian-duan-huan-jing-pei-zhi.md)
 * [📖 Vocabulary](vocabulary.md)
-* [Page](za-ji/page.md)
+* [🏗 A React Native Library](za-ji/a-react-native-library/README.md)
+  * [Github Actions](za-ji/a-react-native-library/github-actions.md)
 
 ## code-blocks
 
