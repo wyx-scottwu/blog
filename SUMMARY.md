@@ -40,6 +40,7 @@
   * [PNpm](notes/npm/pnpm/README.md)
     * [⚙ Configure](notes/npm/pnpm/configure.md)
     * [💾 Commands](notes/npm/pnpm/commands.md)
+  * [nvm](notes/npm/nvm.md)
 * [🔀 Git](notes/git/README.md)
   * [commit](notes/git/commit.md)
 * [⚡ Vite](notes/vite/README.md)
