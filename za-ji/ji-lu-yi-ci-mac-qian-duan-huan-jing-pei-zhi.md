@@ -17,13 +17,15 @@ xcode-select --install
 * 安装包管理工具[`homebrew`](https://brew.sh/)
 * 安装`nvm`
 
-{% code overflow="wrap" lineNumbers="true" %}
-```shell
-brew install nvm
-```
-{% endcode %}
+<pre class="language-shell" data-overflow="wrap" data-line-numbers><code class="lang-shell"><strong>brew install nvm
+</strong></code></pre>
 
 * 安装`mysql/nginx/redis .etc`
+* 安装`watchman`
+
+```shell
+    brew install watchman
+```
 
 
 
