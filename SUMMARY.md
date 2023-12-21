@@ -4,6 +4,7 @@
 
 ## NOTES
 
+* [💯 Readability](notes/readability.md)
 * [👨💻 JavaScript](notes/javascript/README.md)
   * [getBoundingClientRect](notes/javascript/getboundingclientrect.md)
   * [JavaScript表达式](notes/javascript/javascript-biao-da-shi.md)
