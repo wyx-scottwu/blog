@@ -44,6 +44,8 @@
   * [nvm](notes/npm/nvm.md)
 * [🔀 Git](notes/git/README.md)
   * [commit](notes/git/commit.md)
+  * [revert](notes/git/revert.md)
+  * [reset](notes/git/reset.md)
 * [⚡ Vite](notes/vite/README.md)
   * [mock](notes/vite/mock.md)
 * [🛠 Tools](notes/tools/README.md)
