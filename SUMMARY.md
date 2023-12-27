@@ -46,6 +46,7 @@
   * [commit](notes/git/commit.md)
   * [revert](notes/git/revert.md)
   * [reset](notes/git/reset.md)
+  * [GitHub](notes/git/github.md)
 * [⚡ Vite](notes/vite/README.md)
   * [mock](notes/vite/mock.md)
 * [🛠 Tools](notes/tools/README.md)
