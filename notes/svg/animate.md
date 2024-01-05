@@ -1,6 +1,6 @@
 # animate
 
-`animateName`
+#### `animateName`
 
 用于标识父元素需要动态改变的属性名
 
@@ -17,3 +17,9 @@
   </rect>
 </svg>
 ```
+
+#### `dur`
+
+即`duration`，指每一次动画运行时间间隔，可用元素见[链接](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Element#animation)
+
+默认`indefinite`，可以理解为没有运行时间，即不运行动画
