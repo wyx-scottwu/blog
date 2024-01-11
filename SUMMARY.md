@@ -79,6 +79,7 @@
 * [🚨 规范](notes/gui-fan/README.md)
   * [ESLint](notes/gui-fan/eslint.md)
   * [Prettier](notes/gui-fan/prettier.md)
+* [🤩 AWESOME](notes/awesome.md)
 
 ## daily questions
 
