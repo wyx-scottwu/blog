@@ -140,7 +140,7 @@ function demo() {
 }
 ```
 
-
+***
 
   上述代码其实可以看作等价于下面的代码
 
@@ -172,7 +172,7 @@ function demo() {
 }
 ```
 
-
+***
 
 > 参考资料:
 >
@@ -188,6 +188,6 @@ function demo() {
 >
 > \[6]. [Markdown syntax](http://www.markdown.cn/)
 
-
+***
 
 **以上描述及解决方案均属个人观点，若您存在任何疑问及意见，还请联系本人** [**✉️ 邮箱**](mailto:wyx.scottwu@gmail.com)**。**
