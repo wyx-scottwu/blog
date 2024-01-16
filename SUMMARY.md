@@ -8,6 +8,7 @@
 * [🖼 Svg](notes/svg/README.md)
   * [animate](notes/svg/animate.md)
   * [rect](notes/svg/rect.md)
+  * [mask](notes/svg/mask.md)
 * [👨💻 JavaScript](notes/javascript/README.md)
   * [getBoundingClientRect](notes/javascript/getboundingclientrect.md)
   * [JavaScript表达式](notes/javascript/javascript-biao-da-shi.md)
