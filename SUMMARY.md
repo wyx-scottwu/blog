@@ -7,8 +7,11 @@
 * [💯 Readability](notes/readability.md)
 * [🖼 Svg](notes/svg/README.md)
   * [animate](notes/svg/animate.md)
-  * [rect](notes/svg/rect.md)
+  * [defs](notes/svg/defs.md)
+  * [g](notes/svg/g.md)
   * [mask](notes/svg/mask.md)
+  * [rect](notes/svg/rect.md)
+  * [use](notes/svg/use.md)
 * [👨💻 JavaScript](notes/javascript/README.md)
   * [getBoundingClientRect](notes/javascript/getboundingclientrect.md)
   * [JavaScript表达式](notes/javascript/javascript-biao-da-shi.md)
@@ -93,11 +96,12 @@
 
 * [😀 Untitled](za-ji/untitled.md)
 * [💻 记录一次Mac前端环境配置](za-ji/ji-lu-yi-ci-mac-qian-duan-huan-jing-pei-zhi.md)
-* [📖 Vocabulary](vocabulary.md)
+* [✨ 记录一次搭建UI库](za-ji/ji-lu-yi-ci-da-jian-ui-ku.md)
 * [🏗 A React Native Library](za-ji/a-react-native-library/README.md)
   * [Expo](za-ji/a-react-native-library/expo.md)
   * [Github Actions](za-ji/a-react-native-library/github-actions.md)
 * [🔤 零宽字符](za-ji/ling-kuan-zi-fu.md)
+* [📖 Vocabulary](vocabulary.md)
 
 ## code-blocks
 
