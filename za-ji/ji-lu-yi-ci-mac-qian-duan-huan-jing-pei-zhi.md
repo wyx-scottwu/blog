@@ -23,9 +23,24 @@ xcode-select --install
 * 安装`mysql/nginx/redis .etc`
 * 安装`watchman`
 
-```shell
-    brew install watchman
+<pre class="language-shell"><code class="lang-shell"><strong>brew install watchman
+</strong></code></pre>
+
+* 安装`cocoapods`
+
+```sh
+brew install cocoapods
 ```
 
+* `Android`开发环境配置需要安装`jdk`
 
+```sh
+brew tap homebrew/cask-versions
+brew install --cask zulu17
+
+# Get path to where cask was installed to double-click installer
+brew info --cask zulu17
+```
+
+android 环境变量配置
 
