@@ -1,4 +1,4 @@
-# ⚙ Configure
+# ⚙️ Configure
 
 ### `基本命令`
 

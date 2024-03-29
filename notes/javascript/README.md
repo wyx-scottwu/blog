@@ -2,5 +2,5 @@
 description: JavaScript
 ---
 
-# 👨💻 JavaScript
+# 👨‍💻 JavaScript
 

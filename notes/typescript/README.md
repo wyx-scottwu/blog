@@ -2,6 +2,6 @@
 description: TypeScript
 ---
 
-# 👨💻 TypeScript
+# 👨‍💻 TypeScript
 
 &#x20;
