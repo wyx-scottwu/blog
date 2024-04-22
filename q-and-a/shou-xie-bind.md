@@ -4,7 +4,8 @@
 ```javascript
 // bind
 function.prototype._bind = function (f, target) {
-    if(!target instaceof Object) throw new TypeError("Target must be object");
+    if(!target instanceof Object) 
+        throw new TypeError("Target must be object");
     return function(...args) {
         const targetCopy = new Object(target);
         targetCopy.__TEMP_FN__ = f;
