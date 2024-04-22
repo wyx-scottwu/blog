@@ -94,6 +94,11 @@
 * [🤩 Awesome](notes/awesome/README.md)
   * [Caddy](notes/awesome/caddy.md)
 
+***
+
+* [Q\&A](q-and-a/README.md)
+  * [手写bind](q-and-a/shou-xie-bind.md)
+
 ## daily questions
 
 * [📝 I 使用JS实现带并发的异步任务调度器](daily-questions/i-shi-yong-js-shi-xian-dai-bing-fa-de-yi-bu-ren-wu-tiao-du-qi.md)
