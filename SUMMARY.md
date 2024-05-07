@@ -50,7 +50,7 @@
   * [浏览器兼容](notes/css/liu-lan-qi-jian-rong.md)
 * [📦 Npm](notes/npm/README.md)
   * [📦 http-server](notes/npm/http-server.md)
-  * [PNpm](notes/npm/pnpm/README.md)
+  * [pnpm](notes/npm/pnpm/README.md)
     * [⚙️ Configure](notes/npm/pnpm/configure.md)
     * [💾 Commands](notes/npm/pnpm/commands.md)
   * [nvm](notes/npm/nvm.md)
