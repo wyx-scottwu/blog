@@ -120,7 +120,7 @@
 ## code-blocks
 
 * [❔ Invert Color](code-blocks/invert-color.md)
-* [富文本图片处理](code-blocks/fu-wen-ben-tu-pian-chu-li.md)
+* [📃 富文本图片处理](code-blocks/fu-wen-ben-tu-pian-chu-li.md)
 
 ## 🔎 重学前端
 

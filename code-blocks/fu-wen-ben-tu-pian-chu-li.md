@@ -2,7 +2,7 @@
 description: from chat-gpt-3.5
 ---
 
-# 富文本图片处理
+# 📃 富文本图片处理
 
 ```typescript
 function addStyleToImgTags(htmlString: string, styleToAdd: string): string {
