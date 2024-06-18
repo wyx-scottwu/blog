@@ -95,6 +95,11 @@
 * [🤩 Awesome](notes/awesome/README.md)
   * [Caddy](notes/awesome/caddy.md)
 
+## 软考
+
+* [系统架构设计师](ruan-kao/xi-tong-jia-gou-she-ji-shi/README.md)
+  * [计算机系统基础](ruan-kao/xi-tong-jia-gou-she-ji-shi/ji-suan-ji-xi-tong-ji-chu.md)
+
 ***
 
 * [Q\&A](q-and-a/README.md)
