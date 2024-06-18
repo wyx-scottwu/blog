@@ -99,6 +99,7 @@
 
 * [系统架构设计师](ruan-kao/xi-tong-jia-gou-she-ji-shi/README.md)
   * [计算机系统基础](ruan-kao/xi-tong-jia-gou-she-ji-shi/ji-suan-ji-xi-tong-ji-chu.md)
+  * [嵌入式系统](ruan-kao/xi-tong-jia-gou-she-ji-shi/qian-ru-shi-xi-tong.md)
 
 ***
 
