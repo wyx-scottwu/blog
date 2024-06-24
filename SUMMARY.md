@@ -8,6 +8,8 @@
 * [🧮 算法](notes/suan-fa/README.md)
   * [双端比较算法](notes/suan-fa/shuang-duan-bi-jiao-suan-fa.md)
   * [最长子序列算法](notes/suan-fa/zui-chang-zi-xu-lie-suan-fa.md)
+* [🚧 数据结构](notes/shu-ju-jie-gou/README.md)
+  * [前缀树](notes/shu-ju-jie-gou/qian-zhui-shu.md)
 * [🖼️ Svg](notes/svg/README.md)
   * [animate](notes/svg/animate.md)
   * [defs](notes/svg/defs.md)
