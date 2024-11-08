@@ -47,6 +47,7 @@
 * [📶 HTTP](notes/http/README.md)
   * [Cookies](notes/http/cookies.md)
 * [🌈 CSS](notes/css/README.md)
+  * [GSAP动画](notes/css/gsap-dong-hua.md)
   * [BFC](notes/css/bfc.md)
   * [Page](notes/css/page.md)
   * [浏览器兼容](notes/css/liu-lan-qi-jian-rong.md)
