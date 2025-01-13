@@ -1,12 +1,8 @@
 ---
-description: usage
+description: 在 TypeScript 中，interface 和 type 都可以用来定义对象的结构，但它们之间有一些重要的区别和使用场景。以下是对两者的详细比较：
 ---
 
 # Type & Interface
-
-在 TypeScript 中，interface 和 type 都可以用来定义对象的结构，但它们之间有一些重要的区别和使用场景。以下是对两者的详细比较：
-
-***
 
 ### I. `interface` 和 `type` 的相同点
 
@@ -36,8 +32,8 @@ type User = {
 
 #### 区别 1：扩展方式不同
 
-* `interface`使用`extends`关键字扩展
-* `type`使用交集（`&`）来实现类型组合
+* [`interface`使用`extends`关键字扩展](type-de-jiao-ji-he-interface-de-ji-cheng.md#id-1.-interface-extends-chong-fu-lei-xing-de-chu-li)
+* [`type`使用交集（`&`）来实现类型组合](type-de-jiao-ji-he-interface-de-ji-cheng.md#id-2.-type-de-jiao-ji-intersection-types-chong-fu-lei-xing-de-chu-li)
 
 ```typescript
 // interface 扩展
@@ -59,7 +55,7 @@ type Employee = Person & {
 
 ***
 
-#### 区别 2：`interface` 支持声明合并，`type` 不支持
+#### 区别 2：[`interface` 支持声明合并](interface-sheng-ming-he-bing.md)，`type` 不支持
 
 * `interface`支持多次声明，所有声明会自动合并
 * `type`不支持多次声明，如果重复声明会报错

@@ -3,7 +3,7 @@
 ### 1. `Cookie`
 
   一般来讲，由服务端创建并存储携带在 `http Response Headers` 的 `Set-Cookie` 中，并在浏览器下次请求同一服务器时，通过 `Request Headers` 的 `Cookie` 字段发送给后端。\
-`Cookie` 是无状态http的_状态_。
+`Cookie` 是无状态http&#x7684;_&#x72B6;态_。
 
 `Cookie` 目前主流用法：
 
