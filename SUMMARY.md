@@ -28,7 +28,7 @@
   * [Type & Interface](notes/typescript/type-and-interface/README.md)
     * [type 的交集 和 interface 的继承](notes/typescript/type-and-interface/type-de-jiao-ji-he-interface-de-ji-cheng.md)
     * [interface 声明合并](notes/typescript/type-and-interface/interface-sheng-ming-he-bing.md)
-  * [范型](notes/typescript/fan-xing.md)
+  * [泛型](notes/typescript/fan-xing.md)
 * [🏗️ React](notes/react/README.md)
   * [🔗 react](notes/react/react/README.md)
     * [XSS](notes/react/react/xss.md)
