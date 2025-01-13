@@ -18,6 +18,8 @@
   * [rect](notes/svg/rect.md)
   * [use](notes/svg/use.md)
 * [👨‍💻 JavaScript](notes/javascript/README.md)
+  * [Array](notes/javascript/array/README.md)
+    * [Sparse Array](notes/javascript/array/sparse-array.md)
   * [getBoundingClientRect](notes/javascript/getboundingclientrect.md)
   * [JavaScript表达式](notes/javascript/javascript-biao-da-shi.md)
   * [浏览器兼容](notes/javascript/liu-lan-qi-jian-rong.md)
