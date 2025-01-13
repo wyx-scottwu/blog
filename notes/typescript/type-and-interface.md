@@ -164,14 +164,18 @@ class Employee implements Person {
 
 ### 总结：`interface` `vs` `type`
 
-| 特性      | interface | type |
-| ------- | --------- | ---- |
-| 定义对象结构  | ✅         | ✅    |
-| 扩展方式    |           |      |
-| 声明合并    |           |      |
-| 定义联合累心  |           |      |
+<table><thead><tr><th width="202">特性</th><th width="150">interface</th><th width="127">type</th></tr></thead><tbody><tr><td>定义对象结构</td><td>✅</td><td>✅</td></tr><tr><td>扩展方式</td><td><code>extends</code></td><td><code>&#x26;</code></td></tr><tr><td>声明合并（重复声明）</td><td>✅</td><td>❌</td></tr><tr><td>定义联合类型</td><td>❌</td><td>✅</td></tr><tr><td>基本类型别名</td><td>❌</td><td>✅</td></tr><tr><td>定义元组类型</td><td>❌</td><td>✅</td></tr><tr><td>类实现</td><td>✅</td><td>❌</td></tr></tbody></table>
 
+***
 
+### 何时使用`interface` 和 `type`
 
+<table><thead><tr><th width="370">使用场景</th><th width="142">推荐使用</th></tr></thead><tbody><tr><td>定义对象结构</td><td><code>interface</code></td></tr><tr><td>需要声明合并</td><td><code>interface</code></td></tr><tr><td>定义联合类型或基本类型别名</td><td><code>type</code></td></tr><tr><td>定义复杂类型（交集、条件类型）</td><td><code>type</code></td></tr><tr><td>定义类的实现</td><td><code>interface</code></td></tr></tbody></table>
 
+***
+
+### 💡总结建议：
+
+* 大多数情况下，使用`interface`定义对象结构和类
+* 如果需要定义联合类型、基本类型别名或更复杂的类型逻辑时，用`type`
 
