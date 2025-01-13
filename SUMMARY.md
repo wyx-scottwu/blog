@@ -24,6 +24,7 @@
   * [JavaScript表达式](notes/javascript/javascript-biao-da-shi.md)
   * [浏览器兼容](notes/javascript/liu-lan-qi-jian-rong.md)
 * [👨‍💻 TypeScript](notes/typescript/README.md)
+  * [Class](notes/typescript/class.md)
   * [Type & Interface](notes/typescript/type-and-interface/README.md)
     * [type 的交集 和 interface 的继承](notes/typescript/type-and-interface/type-de-jiao-ji-he-interface-de-ji-cheng.md)
     * [interface 声明合并](notes/typescript/type-and-interface/interface-sheng-ming-he-bing.md)
