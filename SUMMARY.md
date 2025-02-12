@@ -58,6 +58,7 @@
   * [Page](notes/css/page.md)
   * [浏览器兼容](notes/css/liu-lan-qi-jian-rong.md)
 * [📦 Npm](notes/npm/README.md)
+  * [package.json](notes/npm/package.json.md)
   * [📦 http-server](notes/npm/http-server.md)
   * [pnpm](notes/npm/pnpm/README.md)
     * [⚙️ Configure](notes/npm/pnpm/configure.md)
