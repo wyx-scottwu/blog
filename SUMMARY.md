@@ -18,6 +18,7 @@
   * [rect](notes/svg/rect.md)
   * [use](notes/svg/use.md)
 * [👨‍💻 JavaScript](notes/javascript/README.md)
+  * [Number.EPSILON](notes/javascript/number.epsilon.md)
   * [Array](notes/javascript/array/README.md)
     * [Sparse Array](notes/javascript/array/sparse-array.md)
   * [getBoundingClientRect](notes/javascript/getboundingclientrect.md)
