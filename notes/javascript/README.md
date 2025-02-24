@@ -1,6 +1,7 @@
 ---
 description: JavaScript
+icon: js
 ---
 
-# 👨‍💻 JavaScript
+# JavaScript
 
