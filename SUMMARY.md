@@ -18,6 +18,7 @@
   * [rect](notes/svg/rect.md)
   * [use](notes/svg/use.md)
 * [Python](notes/python/README.md)
+  * [模块化开发](notes/python/mo-kuai-hua-kai-fa.md)
   * [set](notes/python/set.md)
 * [JavaScript](notes/javascript/README.md)
   * [Number.EPSILON](notes/javascript/number.epsilon.md)
