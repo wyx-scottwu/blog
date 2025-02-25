@@ -36,6 +36,3 @@ description: 列表是 Python 中最常用的数据结构之一，支持动态�
     my_list.copy()          # 返回列表的浅拷贝
     ```
 
-**`list():`**\
-
-
