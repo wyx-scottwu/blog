@@ -18,6 +18,8 @@
   * [rect](notes/svg/rect.md)
   * [use](notes/svg/use.md)
 * [Python](notes/python/README.md)
+  * [循环](notes/python/xun-huan.md)
+  * [异步](notes/python/yi-bu.md)
   * [模块化开发](notes/python/mo-kuai-hua-kai-fa.md)
   * [数据类型](notes/python/shu-ju-lei-xing/README.md)
     * [数字(int, float)](notes/python/shu-ju-lei-xing/shu-zi-int-float.md)
